@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/toolbar"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/MatchWrap"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="40.0dip"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/toolbar">
+
+        <TextView
+            android:id="@+id/tv_top_title"
+            style="@style/WrapWrap"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:maxLength="10"
+            android:textColor="#ffffffff"
+            android:textSize="18.0dip"/>
+
+
+        <TextView
+            android:id="@+id/imLeftTitle"
+            style="@style/WrapMatch"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20.0dip"
+            android:gravity="center"
+            android:textColor="@color/white"/>
+
+        <ImageView
+            android:id="@+id/btnBack"
+            style="@style/WrapMatch"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/width_15dp"
+            android:paddingRight="@dimen/width_15dp"
+            android:src="@mipmap/btn_back_white"/>
+
+        <Button
+            android:id="@+id/btn_review"
+            style="@style/WrapMatch"
+            android:layout_alignBaseline="@id/imLeftTitle"
+            android:layout_alignBottom="@id/imLeftTitle"
+            android:layout_alignParentRight="true"
+            android:background="@color/mass_tone"
+            android:textColor="@color/white"
+            android:textSize="14.0dip"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/btn_review_image"
+            style="@style/WrapMatch"
+            android:layout_alignBottom="@id/imLeftTitle"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:padding="8.0dip"
+            android:textColor="@color/white"
+            android:textSize="14.0dip"
+            android:visibility="gone"/>
+    </RelativeLayout>
+</LinearLayout>

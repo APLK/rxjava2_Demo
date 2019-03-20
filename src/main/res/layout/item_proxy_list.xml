@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                style="@style/MatchWrap"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/height_8dp"
+                android:paddingLeft="@dimen/width_10dp"
+                android:paddingRight="@dimen/width_10dp"
+                android:paddingTop="@dimen/height_8dp">
+
+    <TextView
+        android:id="@+id/grade"
+        style="@style/WrapWrap"
+        android:drawableLeft="@mipmap/proxy1"
+        android:drawablePadding="@dimen/width_10dp"
+        android:gravity="center"
+        android:text="大掌柜"
+        android:textColor="@color/common_h1"
+        android:textSize="@dimen/textsize_16sp"/>
+
+    <TextView
+        android:id="@+id/count"
+        style="@style/WrapWrap"
+        android:layout_alignParentRight="true"
+        android:drawablePadding="@dimen/width_10dp"
+        android:drawableRight="@mipmap/icon_enter"
+        android:gravity="center"
+        android:text="0人"
+        android:textSize="@dimen/textsize_16sp"/>
+
+</RelativeLayout>

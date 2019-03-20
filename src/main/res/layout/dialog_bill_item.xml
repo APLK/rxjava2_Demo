@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/rl_dlg_bill"
+                style="@style/MatchMatch"
+                android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/ll_dlg_bill"
+        style="@style/WrapWrap"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@mipmap/img_bill_item_balck"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/WrapWrap"
+            android:layout_marginLeft="40dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_dlg_bill_title"
+                style="@style/WrapWrap"
+                android:layout_marginTop="25dp"
+                android:text="逾期"
+                android:textColor="@android:color/white"
+                android:textSize="23sp"/>
+
+            <TextView
+                android:id="@+id/tv_dlg_bill_text"
+                style="@style/WrapWrap"
+                android:layout_marginTop="10dp"
+                android:text="dafdas"
+                android:textColor="@android:color/white"
+                android:textSize="12dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_dlg_bill_date"
+            style="@style/WrapWrap"
+            android:layout_gravity="center"
+            android:layout_marginTop="48dp"
+            android:gravity="center"
+            android:text="还款时间："
+            android:textColor="#c7c7cc"
+            android:textSize="12sp"/>
+
+        <LinearLayout
+            style="@style/WrapAuto"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/tv_dlg_bill_th"
+                style="@style/WrapWrap"
+                android:lineSpacingExtra="3dp"
+                android:text="dasfds \n dsafds \n"
+                android:textColor="#676767"
+                android:textSize="14dp"/>
+
+            <TextView
+                android:id="@+id/tv_dlg_bill_tbody"
+                style="@style/WrapWrap"
+                android:layout_marginLeft="10dp"
+                android:lineSpacingExtra="3dp"
+                android:text="dasfds \n dsafds \n"
+                android:textColor="#323232"
+                android:textSize="14dp"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_dlg_bill_quhuankuan"
+            style="@style/WrapWrap"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/selector_btn_bill_item"
+            android:gravity="center"
+            android:text="去还款"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_dlg_bill_close"
+        style="@style/WrapWrap"
+        android:layout_alignParentRight="true"
+        android:background="@mipmap/btn_exit"/>
+
+</RelativeLayout>

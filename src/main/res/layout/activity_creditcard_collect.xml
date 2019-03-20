@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/MatchMatch"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:background="@color/common_gray_bg"
+              android:orientation="vertical">
+
+    <include layout="@layout/toolbar"/>
+
+    <RelativeLayout
+        android:id="@+id/add_creditcard"
+        style="@style/MatchWrap"
+        android:layout_marginTop="@dimen/height_10dp"
+        android:background="@color/white"
+        android:padding="@dimen/height_10dp">
+
+        <TextView
+            android:id="@+id/tv_add"
+            style="@style/WrapWrap"
+            android:layout_centerVertical="true"
+            android:text="信用卡收款"
+            android:textColor="@color/common_h1"
+            android:textSize="@dimen/textsize_15sp"/>
+
+        <TextView
+            android:id="@+id/tv_credit"
+            style="@style/WrapWrap"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/width_25dp"
+            android:layout_toRightOf="@+id/tv_add"
+            android:drawableLeft="@mipmap/add_card"
+            android:drawablePadding="@dimen/width_10dp"
+            android:gravity="center"
+            android:text="添加信用卡"
+            android:textColor="@color/common_h1"
+            android:textSize="@dimen/textsize_15sp"/>
+
+        <ImageView
+            style="@style/WrapWrap"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_enter"/>
+    </RelativeLayout>
+
+    <View
+        style="@style/MatchOne"
+        android:layout_marginLeft="@dimen/width_10dp"
+        android:layout_marginRight="@dimen/width_10dp"
+        android:background="@color/common_divider_narrow"/>
+
+    <RelativeLayout
+        android:id="@+id/collect_card"
+        style="@style/MatchWrap"
+        android:background="@color/white"
+        android:padding="@dimen/height_10dp">
+
+        <TextView
+            android:id="@+id/tv_collect_card"
+            style="@style/WrapWrap"
+            android:layout_centerVertical="true"
+            android:text="到账储蓄卡"
+            android:textColor="@color/common_h1"
+            android:textSize="@dimen/textsize_15sp"/>
+
+        <TextView
+            android:id="@+id/tv_bank"
+            style="@style/WrapWrap"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/width_25dp"
+            android:layout_toRightOf="@+id/tv_collect_card"
+            android:drawableLeft="@mipmap/add_card"
+            android:drawablePadding="@dimen/width_10dp"
+            android:gravity="center"
+            android:text="添加储蓄卡"
+            android:textColor="@color/common_h1"
+            android:textSize="@dimen/textsize_15sp"/>
+
+        <ImageView
+            android:id="@+id/iv_enter"
+            style="@style/WrapWrap"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_enter"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="@dimen/height_12dp"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/height_20dp"
+        android:paddingLeft="@dimen/width_12dp"
+        android:paddingRight="@dimen/width_12dp"
+        android:paddingTop="@dimen/height_20dp">
+
+        <TextView
+            style="@style/WrapWrap"
+            android:layout_alignParentTop="true"
+            android:text="收款金额"/>
+
+        <LinearLayout
+            android:id="@+id/input_money"
+            style="@style/MatchWrap"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/height_15dp">
+
+            <TextView
+                style="@style/AutoWrap"
+                android:gravity="center_vertical"
+                android:text="¥"
+                android:textSize="35sp"/>
+
+            <EditText
+                android:id="@+id/et_money"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:hint="0.00"
+                android:inputType="numberDecimal"
+                android:textSize="35sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/MatchWrap"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:id="@+id/tv_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@string/my_rate"
+                android:textSize="@dimen/textsize_12sp"/>
+
+            <TextView
+                android:id="@+id/tv_update"
+                style="@style/MatchWrap"
+                android:layout_marginLeft="@dimen/width_20dp"
+                android:gravity="center_vertical"
+                android:text="@string/update_rate"
+                android:textColor="@color/red"
+                android:textSize="@dimen/textsize_12sp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        style="@style/MatchAuto"/>
+
+    <android.inputmethodservice.KeyboardView
+        android:id="@+id/keyboard_view"
+        style="@style/MatchWrap"
+        android:background="#F4F4F4"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:keyBackground="@drawable/shuzi_selector"
+        android:keyTextColor="#000000"
+        android:keyTextSize="20sp"
+        android:shadowColor="#FFFFFF"/>
+</LinearLayout>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/MatchWrap"
+              android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/MatchWrap"
+        android:layout_marginTop="10.0dip"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45.0dip"
+            android:background="@mipmap/bg_card_blue"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_bank_logo"
+                android:layout_width="35.0dip"
+                android:layout_height="35.0dip"
+                android:layout_marginLeft="15.0dip"
+                android:layout_marginTop="5.0dip"/>
+
+            <TextView
+                android:id="@+id/tv_bank_name"
+                style="@style/WrapWrap"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="20.0dip"
+                android:layout_weight="1.0"
+                android:text="undefined"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/tv_start"
+                style="@style/WrapWrap"
+                android:layout_gravity="center|left"
+                android:layout_marginRight="20.0dip"
+                android:text="undefined"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70.0dip"
+            android:background="@mipmap/bg_card_w"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                style="@style/AutoMatch"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/WrapWrap"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="12.0dip"
+                    android:text="额度"
+                    android:textColor="@color/text_black"
+                    android:textSize="15.0dip"/>
+
+                <TextView
+                    android:id="@+id/tv_credit_line"
+                    style="@style/WrapWrap"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10.0dip"
+                    android:text="undefined"
+                    android:textColor="@color/text_black"
+                    android:textSize="15.0dip"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="1.0dip"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8.0dip"
+                android:layout_marginTop="8.0dip"
+                android:background="@color/blace"/>
+
+            <LinearLayout
+                style="@style/AutoMatch"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/WrapWrap"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="12.0dip"
+                    android:text="账单日"
+                    android:textColor="@color/text_black"
+                    android:textSize="15.0dip"/>
+
+                <TextView
+                    android:id="@+id/tv_state_date"
+                    style="@style/WrapWrap"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10.0dip"
+                    android:text="undefined"
+                    android:textColor="@color/text_black"
+                    android:textSize="15.0dip"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="1.0dip"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8.0dip"
+                android:layout_marginTop="8.0dip"
+                android:background="@color/blace"/>
+
+            <LinearLayout
+                style="@style/AutoMatch"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/WrapWrap"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="12.0dip"
+                    android:text="还款日"
+                    android:textColor="@color/text_black"
+                    android:textSize="15.0dip"/>
+
+                <TextView
+                    android:id="@+id/tv_repay_date"
+                    style="@style/WrapWrap"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10.0dip"
+                    android:text="undefined"
+                    android:textColor="@color/text_black"
+                    android:textSize="15.0dip"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="1.0dip"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8.0dip"
+                android:layout_marginTop="8.0dip"
+                android:background="@color/blace"/>
+
+            <LinearLayout
+                style="@style/AutoMatch"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_status"
+                    style="@style/WrapWrap"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5.0dip"
+                    android:layout_marginTop="12.0dip"
+                    android:text="还款金额"
+                    android:textColor="@color/text_black"
+                    android:textSize="15.0dip"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/img_start"
+                    android:layout_width="30.0dip"
+                    android:layout_height="30.0dip"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8.0dip"
+                    android:src="@mipmap/icon_home_reimbursement"
+                    android:textColor="@color/text_black"
+                    android:textSize="15.0dip"/>
+
+                <TextView
+                    android:text="undefined"
+                    android:id="@+id/tv_plan_status"
+                    style="@style/WrapWrap"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5.0dip"
+                    android:textColor="@color/text_black"
+                    android:textSize="15.0dip"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

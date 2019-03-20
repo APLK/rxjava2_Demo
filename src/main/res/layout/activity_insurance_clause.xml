@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/MatchMatch"
+              android:background="@color/bg_main"
+              android:orientation="vertical">
+
+    <include layout="@layout/toolbar"/>
+
+    <ScrollView
+        style="@style/MatchMatch">
+
+        <LinearLayout
+            style="@style/MatchMatch"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/width_120dp"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    style="@style/WrapWrap"
+                    android:layout_margin="20.0dip"
+                    android:src="@mipmap/icon_pingan_logo"/>
+
+                <ImageView
+                    style="@style/WrapWrap"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20.0dip"
+                    android:src="@mipmap/icon_guarantee"/>
+
+                <TextView
+                    style="@style/WrapWrap"
+                    android:layout_alignLeft="@+id/imageView2"
+                    android:layout_below="@+id/imageView2"
+                    android:text="个人银行卡盗刷保险"
+                    android:textColor="@color/text_black"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45.0dip"
+                android:layout_marginTop="1.0dip"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingLeft="20.0dip"
+                android:paddingRight="20.0dip">
+
+                <TextView
+                    style="@style/WrapWrap"
+                    android:layout_gravity="center|left"
+                    android:text="保险对象"/>
+
+                <TextView
+                    android:id="@+id/tv_guarantee_object"
+                    style="@style/AutoWrap"
+                    android:layout_gravity="center|right"
+                    android:gravity="center|right"
+                    android:text=" "/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45.0dip"
+                android:layout_marginTop="1.0dip"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingLeft="20.0dip"
+                android:paddingRight="20.0dip">
+
+                <TextView
+                    style="@style/WrapWrap"
+                    android:layout_gravity="center|left"
+                    android:text="投保单号"/>
+
+                <TextView
+                    android:id="@+id/tv_application_number"
+                    style="@style/AutoWrap"
+                    android:layout_gravity="center|right"
+                    android:gravity="center|right"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45.0dip"
+                android:layout_marginTop="1.0dip"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingLeft="20.0dip"
+                android:paddingRight="20.0dip">
+
+                <TextView
+                    style="@style/WrapWrap"
+                    android:layout_gravity="center|left"
+                    android:text="保单号"/>
+
+                <TextView
+                    android:id="@+id/tv_policy_number"
+                    style="@style/AutoWrap"
+                    android:layout_gravity="center|right"
+                    android:gravity="center|right"
+                    android:text=" "/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45.0dip"
+                android:layout_marginTop="1.0dip"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingLeft="20.0dip"
+                android:paddingRight="20.0dip">
+
+                <TextView
+                    style="@style/WrapWrap"
+                    android:layout_gravity="center|left"
+                    android:text="被保险人"/>
+
+                <TextView
+                    android:id="@+id/tv_real_name"
+                    style="@style/AutoWrap"
+                    android:layout_gravity="center|right"
+                    android:gravity="center|right"
+                    android:text=" "/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45.0dip"
+                android:layout_marginTop="1.0dip"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingLeft="20.0dip"
+                android:paddingRight="20.0dip">
+
+                <TextView
+                    style="@style/WrapWrap"
+                    android:layout_gravity="center|left"
+                    android:text="保障开始时间"/>
+
+                <TextView
+                    android:id="@+id/tv_begin_time"
+                    style="@style/AutoWrap"
+                    android:layout_gravity="center|right"
+                    android:gravity="center|right"
+                    android:text=" "/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45.0dip"
+                android:layout_marginTop="1.0dip"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingLeft="20.0dip"
+                android:paddingRight="20.0dip">
+
+                <TextView
+                    style="@style/WrapWrap"
+                    android:layout_gravity="center|left"
+                    android:text="保障结束时间"/>
+
+                <TextView
+                    android:id="@+id/tv_end_time"
+                    style="@style/AutoWrap"
+                    android:layout_gravity="center|right"
+                    android:gravity="center|right"
+                    android:text=" "/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45.0dip"
+                android:layout_marginTop="1.0dip"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingLeft="20.0dip"
+                android:paddingRight="20.0dip">
+
+                <TextView
+                    style="@style/WrapWrap"
+                    android:layout_gravity="center|left"
+                    android:text="保障金额"/>
+
+                <TextView
+                    android:id="@+id/tv_guaranteed_amount"
+                    style="@style/AutoWrap"
+                    android:layout_gravity="center|right"
+                    android:gravity="center|right"
+                    android:text=" "/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45.0dip"
+                android:layout_marginTop="1.0dip"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingLeft="20.0dip"
+                android:paddingRight="20.0dip">
+
+                <TextView
+                    style="@style/WrapWrap"
+                    android:layout_gravity="center|left"
+                    android:text="保险费"/>
+
+                <TextView
+                    android:id="@+id/tv_insurance_amount"
+                    style="@style/AutoWrap"
+                    android:layout_gravity="center|right"
+                    android:gravity="center|right"
+                    android:text=" "/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45.0dip"
+                android:layout_marginTop="1.0dip"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingLeft="20.0dip"
+                android:paddingRight="20.0dip">
+
+                <TextView
+                    style="@style/WrapWrap"
+                    android:layout_gravity="center|left"
+                    android:text="服务热线"/>
+
+                <TextView
+                    android:id="@+id/tv_hotline"
+                    style="@style/AutoWrap"
+                    android:layout_gravity="center|right"
+                    android:gravity="center|right"
+                    android:text=" "/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45.0dip"
+                android:layout_marginTop="1.0dip"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingLeft="15.0dip"
+                android:paddingRight="20.0dip">
+
+                <TextView
+                    android:id="@+id/btn_insurance"
+                    style="@style/WrapWrap"
+                    android:layout_gravity="center|left"
+                    android:gravity="center|left"
+                    android:text="《保险条款》"
+                    android:textColor="@color/nav_bg_color"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

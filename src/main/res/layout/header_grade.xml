@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/MatchWrap"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/my_grade"
+        style="@style/WrapWrap"
+        android:layout_gravity="center_horizontal"
+        android:drawablePadding="@dimen/width_12dp"
+        android:drawableTop="@mipmap/menu_me_myrank_member"
+        android:gravity="center"
+        android:padding="@dimen/height_20dp"
+        android:text="@string/my_grade"
+        android:textColor="@color/common_h1"
+        android:textSize="@dimen/textsize_18sp"/>
+</LinearLayout>

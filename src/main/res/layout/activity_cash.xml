@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/MatchMatch"
+              android:background="@color/common_gray_bg"
+              android:orientation="vertical">
+
+    <include layout="@layout/toolbar"/>
+
+    <RelativeLayout
+        android:id="@+id/bank_view"
+        style="@style/MatchWrap"
+        android:layout_marginTop="@dimen/width_12dp"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/height_10dp"
+        android:paddingLeft="@dimen/width_15dp"
+        android:paddingRight="@dimen/width_15dp"
+        android:paddingTop="@dimen/height_10dp">
+
+        <ImageView
+            android:id="@+id/icon_bank"
+            style="@style/WrapWrap"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_jianshe"/>
+
+        <LinearLayout
+            style="@style/MatchWrap"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/width_15dp"
+            android:layout_toRightOf="@+id/icon_bank"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_bank_name"
+                style="@style/MatchWrap"
+                android:text="null"
+                android:textColor="@color/common_h1"
+                android:textSize="@dimen/textsize_18sp"/>
+
+            <TextView
+                android:id="@+id/tv_number"
+                style="@style/MatchWrap"
+                android:layout_marginTop="@dimen/width_5dp"
+                android:text="null"
+                android:textColor="@color/common_h2"
+                android:textSize="@dimen/textsize_14sp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        style="@style/MatchWrap"
+        android:layout_margin="@dimen/width_12dp"
+        android:drawableLeft="@mipmap/warning"
+        android:drawablePadding="@dimen/width_5dp"
+        android:text="单次结算金额上限49990.00"
+        android:textColor="@color/common_h2"
+        android:textSize="@dimen/textsize_14sp"/>
+
+    <LinearLayout
+        style="@style/MatchWrap"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/width_12dp"
+        android:paddingRight="@dimen/width_12dp">
+
+        <TextView
+            style="@style/WrapWrap"
+            android:paddingBottom="@dimen/width_8dp"
+            android:paddingTop="@dimen/width_8dp"
+            android:text="金额"
+            android:textColor="@color/common_h1"
+            android:textSize="@dimen/textsize_16sp"/>
+
+        <EditText
+            android:id="@+id/et_money"
+            style="@style/AutoMatch"
+            android:layout_marginLeft="@dimen/width_30dp"
+            android:background="@null"
+            android:hint="0.00"
+            android:inputType="numberDecimal"
+            android:textColor="@color/common_h1"
+            android:textSize="@dimen/textsize_16sp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_cash"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_40dp"
+        android:layout_marginLeft="@dimen/width_15dp"
+        android:layout_marginRight="@dimen/width_15dp"
+        android:layout_marginTop="@dimen/height_25dp"
+        android:background="@drawable/selector_btn_login"
+        android:text="立即提现"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textsize_16sp"/>
+
+    <TextView
+        android:id="@+id/income_record"
+        style="@style/MatchWrap"
+        android:layout_marginTop="@dimen/height_20dp"
+        android:gravity="center"
+        android:paddingBottom="@dimen/width_10dp"
+        android:paddingTop="@dimen/width_10dp"
+        android:text="收益详情"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/textsize_16sp"/>
+</LinearLayout>

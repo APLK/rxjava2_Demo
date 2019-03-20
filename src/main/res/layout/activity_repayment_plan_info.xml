@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/MatchMatch"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:background="@color/common_gray_bg"
+              android:orientation="vertical">
+
+    <include layout="@layout/toolbar"/>
+
+    <RelativeLayout
+        style="@style/MatchWrap"
+        android:background="@color/white"
+        android:paddingLeft="20.0dip"
+        android:paddingRight="20.0dip">
+
+        <TextView
+            style="@style/WrapWrap"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/height_10dp"
+            android:paddingTop="@dimen/height_10dp"
+            android:text="还款金额"
+            android:textColor="@color/common_h1"
+            android:textSize="@dimen/textsize_16sp"/>
+
+        <TextView
+            android:id="@+id/pay_money"
+            style="@style/WrapWrap"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/height_10dp"
+            android:paddingTop="@dimen/height_10dp"
+            android:text="0.00"
+            android:textColor="@color/common_h1"
+            android:textSize="@dimen/textsize_16sp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_40dp"
+        android:layout_marginTop="@dimen/height_12dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="20.0dip"
+        android:paddingRight="20.0dip">
+
+        <TextView
+            style="@style/WrapWrap"
+            android:layout_gravity="center|left"
+            android:text="还款计划单号"/>
+
+        <TextView
+            android:id="@+id/tv_application_number"
+            style="@style/AutoWrap"
+            android:layout_gravity="center|right"
+            android:gravity="center|right"
+            android:text=" "/>
+    </LinearLayout>
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_40dp"
+        android:layout_marginTop="1.0dip"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="20.0dip"
+        android:paddingRight="20.0dip">
+
+        <TextView
+            style="@style/WrapWrap"
+            android:layout_gravity="center|left"
+            android:text="还款周期"/>
+
+        <TextView
+            android:id="@+id/tv_all_time"
+            style="@style/AutoWrap"
+            android:layout_gravity="center|right"
+            android:gravity="center|right"
+            android:text=" "/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_40dp"
+        android:layout_marginTop="1.0dip"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="20.0dip"
+        android:paddingRight="20.0dip">
+
+        <TextView
+            style="@style/WrapWrap"
+            android:layout_gravity="center|left"
+            android:text="保证金"/>
+
+        <TextView
+            android:id="@+id/tv_bond"
+            style="@style/AutoWrap"
+            android:layout_gravity="center|right"
+            android:gravity="center|right"
+            android:text=" "/>
+    </LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_40dp"
+        android:layout_marginTop="1.0dip"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="20.0dip"
+        android:paddingRight="20.0dip">
+
+        <TextView
+            style="@style/WrapWrap"
+            android:layout_gravity="center|left"
+            android:text="手续费"/>
+
+        <TextView
+            android:id="@+id/tv_service_charge"
+            style="@style/AutoWrap"
+            android:layout_gravity="center|right"
+            android:gravity="center|right"
+            android:text=" "/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_40dp"
+        android:layout_marginTop="1.0dip"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="20.0dip"
+        android:paddingRight="20.0dip">
+
+        <TextView
+            style="@style/WrapWrap"
+            android:layout_gravity="center|left"
+            android:text="已还期数"/>
+
+        <TextView
+            android:id="@+id/tv_repaymented"
+            style="@style/AutoWrap"
+            android:layout_gravity="center|right"
+            android:gravity="center|right"
+            android:text="0期"
+            android:textColor="@color/blue"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_40dp"
+        android:layout_marginTop="1.0dip"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="20.0dip"
+        android:paddingRight="20.0dip">
+
+        <TextView
+            style="@style/WrapWrap"
+            android:layout_gravity="center|left"
+            android:text="未还期数"/>
+
+        <TextView
+            android:id="@+id/tv_repayment_no"
+            style="@style/AutoWrap"
+            android:layout_gravity="center|right"
+            android:gravity="center|right"
+            android:text="0期"
+            android:textColor="@color/blue"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_40dp"
+        android:layout_marginTop="1.0dip"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="20.0dip"
+        android:paddingRight="20.0dip">
+
+        <TextView
+            style="@style/WrapWrap"
+            android:layout_gravity="center|left"
+            android:text="消费记录"/>
+
+        <TextView
+            android:id="@+id/tv_spend_record"
+            style="@style/AutoWrap"
+            android:layout_gravity="center|right"
+            android:gravity="center|right"
+            android:text="0笔"
+            android:textColor="@color/blue"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_40dp"
+        android:layout_marginTop="1.0dip"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="20.0dip"
+        android:paddingRight="20.0dip">
+
+        <TextView
+            style="@style/WrapWrap"
+            android:layout_gravity="center|left"
+            android:text="计划提交时间"/>
+
+        <TextView
+            android:id="@+id/tv_plan_time"
+            style="@style/AutoWrap"
+            android:layout_gravity="center|right"
+            android:gravity="center|right"
+            android:text=" "/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_40dp"
+        android:layout_marginTop="1.0dip"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="20.0dip"
+        android:paddingRight="20.0dip">
+
+        <TextView
+            style="@style/WrapWrap"
+            android:layout_gravity="center|left"
+            android:text="交易状态"/>
+
+        <TextView
+            android:id="@+id/tv_state"
+            style="@style/AutoWrap"
+            android:layout_gravity="center|right"
+            android:gravity="center|right"
+            android:text=" "/>
+    </LinearLayout>
+
+</LinearLayout>

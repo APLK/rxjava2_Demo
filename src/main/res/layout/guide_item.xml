@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                style="@style/MatchMatch" >
+
+    <ImageView
+        android:id="@+id/iv_guide"
+        android:focusable="false"
+        android:clickable="false"
+        style="@style/MatchMatch"
+        android:background="@mipmap/guide1"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/iv_start_btn"
+        style="@style/WrapWrap"
+        android:layout_marginRight="@dimen/width_60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/height_55dp"
+        android:textSize="@dimen/textsize_18sp"
+        android:text="点此进入 >>"
+        android:textColor="#F09B27" />
+
+</RelativeLayout>

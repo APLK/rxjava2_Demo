@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/MatchMatch"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical">
+
+    <include layout="@layout/toolbar"/>
+
+    <RelativeLayout
+        style="@style/MatchWrap"
+        android:layout_above="@+id/bt_share"
+        android:layout_below="@+id/toolbar">
+
+        <ImageView
+            android:id="@+id/iv_english"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/height_50dp"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bt_share"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/width_45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/height_30dp"
+        android:layout_marginLeft="@dimen/width_30dp"
+        android:layout_marginRight="@dimen/width_30dp"
+        android:layout_marginTop="@dimen/height_30dp"
+        android:background="@drawable/selector_btn_login"
+        android:gravity="center"
+        android:text="立即分享"
+        android:textColor="#ffffff"
+        android:textSize="18sp"/>
+</RelativeLayout>

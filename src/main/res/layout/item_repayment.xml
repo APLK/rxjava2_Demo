@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/MatchWrap"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <TextView
+        style="@style/MatchWrap"
+        android:gravity="center"
+        android:padding="@dimen/height_8dp"
+        android:text="消费金额"
+        android:textSize="@dimen/sp_14"/>
+
+    <TextView
+        android:id="@+id/tv_spend"
+        style="@style/MatchWrap"
+        android:gravity="center"
+        android:padding="@dimen/height_10dp"
+        android:text="0.00"
+        android:textColor="@color/common_h1"
+        android:textSize="25sp"/>
+
+    <View
+        style="@style/MatchOne"
+        android:layout_margin="@dimen/width_15dp"
+        android:background="@color/common_divider_narrow"/>
+
+    <RelativeLayout
+        style="@style/MatchWrap"
+        android:paddingLeft="@dimen/width_12dp"
+        android:paddingRight="@dimen/width_12dp">
+
+        <TextView
+            android:id="@+id/name"
+            style="@style/WrapWrap"
+            android:paddingBottom="@dimen/height_5dp"
+            android:paddingTop="@dimen/height_5dp"
+            android:text="还款期数"/>
+
+        <TextView
+            android:id="@+id/tv_count"
+            style="@style/WrapWrap"
+            android:layout_alignParentRight="true"
+            android:paddingBottom="@dimen/height_5dp"
+            android:paddingTop="@dimen/height_5dp"
+            android:text="第1期"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/MatchWrap"
+        android:paddingLeft="@dimen/width_12dp"
+        android:paddingRight="@dimen/width_12dp">
+
+        <TextView
+            android:id="@+id/type"
+            style="@style/WrapWrap"
+            android:paddingBottom="@dimen/height_5dp"
+            android:paddingTop="@dimen/height_5dp"
+            android:text="还款方式"/>
+
+        <TextView
+            android:id="@+id/tv_type"
+            style="@style/WrapWrap"
+            android:layout_alignParentRight="true"
+            android:paddingBottom="@dimen/height_5dp"
+            android:paddingTop="@dimen/height_5dp"
+            android:text="自动还款"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/MatchWrap"
+        android:paddingLeft="@dimen/width_12dp"
+        android:paddingRight="@dimen/width_12dp">
+
+        <TextView
+            android:id="@+id/time"
+            style="@style/WrapWrap"
+            android:paddingBottom="@dimen/height_5dp"
+            android:paddingTop="@dimen/height_5dp"
+            android:text="还款时间"/>
+
+        <TextView
+            android:id="@+id/tv_time"
+            style="@style/WrapWrap"
+            android:layout_alignParentRight="true"
+            android:paddingBottom="@dimen/height_5dp"
+            android:paddingTop="@dimen/height_5dp"
+            android:text="2017-12-23 17:31:28"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/MatchWrap"
+        android:paddingLeft="@dimen/width_12dp"
+        android:paddingRight="@dimen/width_12dp">
+
+        <TextView
+            android:id="@+id/code"
+            style="@style/WrapWrap"
+            android:paddingBottom="@dimen/height_5dp"
+            android:paddingTop="@dimen/height_5dp"
+            android:text="还款单号"/>
+
+        <TextView
+            android:id="@+id/tv_code"
+            style="@style/WrapWrap"
+            android:layout_alignParentRight="true"
+            android:paddingBottom="@dimen/height_5dp"
+            android:paddingTop="@dimen/height_5dp"
+            android:text="xxxxxxxxxxxxxxxxxxxxxxxxx"/>
+    </RelativeLayout>
+</LinearLayout>

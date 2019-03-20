@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/MatchMatch"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:background="@color/common_gray_bg"
+              android:orientation="vertical">
+
+    <include layout="@layout/toolbar"/>
+
+    <RelativeLayout
+        android:id="@+id/myinfo_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_100dp"
+        android:background="@color/toolbar"
+        android:padding="@dimen/width_15dp">
+
+        <ImageView
+            android:id="@+id/ivHeader"
+            android:layout_width="@dimen/width_60dp"
+            android:layout_height="@dimen/width_60dp"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_launcher"/>
+
+        <LinearLayout
+            style="@style/WrapMatch"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/width_12dp"
+            android:layout_toRightOf="@+id/ivHeader"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nickname"
+                style="@style/WrapAuto"
+                android:gravity="center"
+                android:text="default"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_18sp"/>
+
+            <TextView
+                android:id="@+id/phone"
+                style="@style/WrapAuto"
+                android:gravity="center"
+                android:text="default"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_14sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bind_phone"
+            style="@style/WrapWrap"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/bind_state"
+                style="@style/WrapWrap"
+                android:background="@drawable/shape_bt_small_bg"
+                android:text="未实名"
+                android:textColor="@color/common_h1"
+                android:textSize="@dimen/sp_12"/>
+
+            <ImageView
+                style="@style/WrapWrap"
+                android:layout_marginLeft="@dimen/width_15dp"
+                android:src="@mipmap/icon_enter"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.szinternet.crm.view.ReboundScrollView
+        style="@style/MatchMatch"
+        android:layout_below="@+id/ivHeader">
+
+        <LinearLayout
+            style="@style/MatchWrap"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/introducer_view"
+                style="@style/MatchWrap"
+                android:background="@drawable/selector_option_item"
+                android:clickable="true"
+                android:padding="@dimen/activity_vertical_margin">
+
+                <TextView
+                    style="@style/WrapWrap"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@mipmap/icon_introducer"
+                    android:drawablePadding="@dimen/width_10dp"
+                    android:gravity="center"
+                    android:text="推荐人"
+                    android:textColor="@color/common_h1"
+                    android:textSize="@dimen/textsize_18sp"/>
+
+                <TextView
+                    android:id="@+id/tv_phonenum"
+                    style="@style/WrapWrap"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="暂无数据"
+                    android:textColor="@color/common_h2"/>
+            </RelativeLayout>
+
+            <View
+                style="@style/MatchOne"
+                android:layout_marginTop="@dimen/height_5dp"
+                android:background="@color/common_divider_narrow"/>
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/message_view"
+                style="@style/MatchWrap"
+                android:background="@drawable/selector_option_item"
+                android:clickable="true"
+                android:padding="@dimen/activity_vertical_margin">
+
+                <TextView
+                    style="@style/WrapWrap"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@mipmap/icon_new"
+                    android:drawablePadding="@dimen/width_10dp"
+                    android:gravity="center"
+                    android:text="消息中心"
+                    android:textColor="@color/common_h1"
+                    android:textSize="@dimen/textsize_18sp"/>
+
+                <TextView
+                    android:id="@+id/tv_msg"
+                    style="@style/WrapWrap"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/circle"
+                    android:text="有未读消息"
+                    android:textColor="@color/common_h2"/>
+
+                <ImageView
+                    android:id="@+id/circle"
+                    style="@style/WrapWrap"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/width_10dp"
+                    android:layout_toLeftOf="@+id/iv_enter"
+                    android:src="@drawable/shape_circle_bg"/>
+
+                <ImageView
+                    android:id="@+id/iv_enter"
+                    style="@style/WrapWrap"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/width_10dp"
+                    android:src="@mipmap/icon_enter"/>
+            </RelativeLayout>
+
+            <View
+                style="@style/MatchOne"
+                android:layout_marginTop="@dimen/height_15dp"
+                android:background="@color/common_divider_narrow"/>
+
+            <RelativeLayout
+                android:id="@+id/rate_view"
+                style="@style/MatchWrap"
+                android:background="@drawable/selector_option_item"
+                android:clickable="true"
+                android:padding="@dimen/activity_vertical_margin">
+
+                <TextView
+                    style="@style/WrapWrap"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@mipmap/icon_rate"
+                    android:drawablePadding="@dimen/width_10dp"
+                    android:gravity="center"
+                    android:text="结算费率"
+                    android:textColor="@color/common_h1"
+                    android:textSize="@dimen/textsize_18sp"/>
+
+                <TextView
+                    style="@style/WrapWrap"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawableRight="@mipmap/icon_enter"
+                    android:textColor="@color/common_h1"/>
+            </RelativeLayout>
+
+            <View
+                style="@style/MatchOne"
+                android:background="@color/common_divider_narrow"
+                android:visibility="visible"/>
+
+            <RelativeLayout
+                android:id="@+id/grade_view"
+                style="@style/MatchWrap"
+                android:background="@drawable/selector_option_item"
+                android:clickable="true"
+                android:padding="@dimen/activity_vertical_margin">
+
+                <TextView
+                    style="@style/WrapWrap"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@mipmap/icon_my_grade"
+                    android:drawablePadding="@dimen/width_10dp"
+                    android:gravity="center"
+                    android:text="我的等级"
+                    android:textColor="@color/common_h1"
+                    android:textSize="@dimen/textsize_18sp"/>
+
+                <TextView
+                    android:id="@+id/tv_grade"
+                    style="@style/WrapWrap"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="@dimen/width_10dp"
+                    android:drawableRight="@mipmap/icon_enter"
+                    android:text="default"
+                    android:textColor="@color/common_h2"/>
+            </RelativeLayout>
+
+            <View
+                style="@style/MatchOne"
+                android:layout_marginTop="@dimen/height_20dp"
+                android:background="@color/common_divider_narrow"/>
+
+            <RelativeLayout
+                android:id="@+id/bind_view"
+                style="@style/MatchWrap"
+                android:background="@drawable/selector_option_item"
+                android:padding="@dimen/activity_vertical_margin">
+
+                <TextView
+                    style="@style/WrapWrap"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@mipmap/icon_bind"
+                    android:drawablePadding="@dimen/width_10dp"
+                    android:gravity="center"
+                    android:text="实名认证"
+                    android:textColor="@color/common_h1"
+                    android:textSize="@dimen/textsize_18sp"/>
+
+                <TextView
+                    android:id="@+id/tv_bind_state"
+                    style="@style/WrapWrap"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="@dimen/width_10dp"
+                    android:drawableRight="@mipmap/icon_enter"
+                    android:text="未认证"
+                    android:textColor="@color/common_h2"/>
+            </RelativeLayout>
+
+            <View
+                style="@style/MatchOne"
+                android:background="@color/common_divider_narrow"
+                android:visibility="visible"/>
+
+            <RelativeLayout
+                android:id="@+id/manger_view"
+                style="@style/MatchWrap"
+                android:background="@drawable/selector_option_item"
+                android:clickable="true"
+                android:padding="@dimen/activity_vertical_margin">
+
+                <TextView
+                    style="@style/WrapWrap"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@mipmap/icon_manage"
+                    android:drawablePadding="@dimen/width_10dp"
+                    android:gravity="center"
+                    android:text="银行卡管理"
+                    android:textColor="@color/common_h1"
+                    android:textSize="@dimen/textsize_18sp"/>
+
+                <TextView
+                    style="@style/WrapWrap"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawableRight="@mipmap/icon_enter"
+                    android:textColor="@color/common_h1"/>
+            </RelativeLayout>
+
+            <View
+                style="@style/MatchOne"
+                android:layout_marginTop="@dimen/height_20dp"
+                android:background="@color/common_divider_narrow"
+                android:visibility="visible"/>
+
+            <RelativeLayout
+                android:id="@+id/guide_view"
+                style="@style/MatchWrap"
+                android:background="@drawable/selector_option_item"
+                android:clickable="true"
+                android:padding="@dimen/activity_vertical_margin">
+
+                <TextView
+                    style="@style/WrapWrap"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@mipmap/icon_guide"
+                    android:drawablePadding="@dimen/width_10dp"
+                    android:gravity="center"
+                    android:text="新手指引"
+                    android:textColor="@color/common_h1"
+                    android:textSize="@dimen/textsize_18sp"/>
+
+                <TextView
+                    style="@style/WrapWrap"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawableRight="@mipmap/icon_enter"
+                    android:textColor="@color/common_h1"/>
+            </RelativeLayout>
+
+            <View
+                style="@style/MatchOne"
+                android:background="@color/common_divider_narrow"
+                android:visibility="visible"/>
+
+            <RelativeLayout
+                android:id="@+id/contact_view"
+                style="@style/MatchWrap"
+                android:background="@drawable/selector_option_item"
+                android:clickable="true"
+                android:padding="@dimen/activity_vertical_margin">
+
+                <TextView
+                    style="@style/WrapWrap"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@mipmap/icon_contact"
+                    android:drawablePadding="@dimen/width_10dp"
+                    android:gravity="center"
+                    android:text="联系客服"
+                    android:textColor="@color/common_h1"
+                    android:textSize="@dimen/textsize_18sp"/>
+
+                <TextView
+                    style="@style/WrapWrap"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawableRight="@mipmap/icon_enter"
+                    android:textColor="@color/common_h1"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </com.szinternet.crm.view.ReboundScrollView>
+</LinearLayout>

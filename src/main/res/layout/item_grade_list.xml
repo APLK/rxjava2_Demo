@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/MatchWrap"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:background="@color/white"
+              android:gravity="center_horizontal"
+              android:orientation="vertical"
+    >
+
+
+    <TextView
+        android:id="@+id/grade_name"
+        style="@style/WrapWrap"
+        android:drawableLeft="@mipmap/proxy1"
+        android:drawablePadding="@dimen/width_10dp"
+        android:gravity="center"
+        android:padding="@dimen/height_15dp"
+        android:text="VIP会员"
+        android:textColor="@color/common_h1"
+        android:textSize="@dimen/textsize_18sp"/>
+
+    <View
+        style="@style/MatchOne"
+        android:background="@color/common_divider_narrow"/>
+
+    <TextView
+        android:id="@+id/money"
+        style="@style/WrapWrap"
+        android:gravity="center"
+        android:padding="@dimen/width_20dp"
+        android:text="¥68.00"
+        android:textColor="@color/red"
+        android:textSize="35sp"/>
+
+    <TextView
+        style="@style/WrapWrap"
+        android:gravity="center"
+        android:padding="@dimen/height_5dp"
+        android:text="升级金额(元)"
+        android:textColor="@color/common_h1"
+        android:textSize="@dimen/textsize_14sp"/>
+
+    <TextView
+        android:id="@+id/rate"
+        style="@style/WrapWrap"
+        android:gravity="center"
+        android:padding="@dimen/height_5dp"
+        android:text="@string/rate"
+        android:textColor="@color/common_h2"
+        android:textSize="@dimen/textsize_12sp"/>
+
+    <Button
+        android:id="@+id/bt_update"
+        style="@style/WrapWrap"
+        android:layout_margin="@dimen/height_25dp"
+        android:background="@drawable/shape_grade"
+        android:text="立即升级"
+        android:textColor="@color/red"
+        android:textSize="@dimen/textsize_14sp"/>
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                style="@style/MatchWrap"
+                android:background="@color/white"
+                android:padding="@dimen/width_12dp"
+                android:paddingRight="@dimen/width_12dp">
+
+    <LinearLayout
+        style="@style/WrapWrap"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_type"
+            style="@style/WrapWrap"
+            android:text="消费"
+            android:textColor="@color/common_h1"
+            android:textSize="@dimen/textsize_15sp"/>
+
+        <TextView
+            android:id="@+id/tv_time"
+            style="@style/WrapWrap"
+            android:layout_marginTop="@dimen/width_5dp"
+            android:text="default"
+            android:textColor="@color/common_h2"
+            android:textSize="@dimen/textsize_13sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_money"
+        style="@style/WrapWrap"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="¥ 0.00"
+        android:textColor="@color/common_h1"
+        android:textSize="@dimen/textsize_17sp"/>
+</RelativeLayout>

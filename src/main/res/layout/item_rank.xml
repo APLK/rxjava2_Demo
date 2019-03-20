@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/MatchWrap"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="@dimen/width_15dp">
+
+    <TextView
+        android:id="@+id/icon_small"
+        style="@style/WrapWrap"
+        android:layout_centerVertical="true"
+        android:drawableLeft="@mipmap/menu_earnings_icon_two"
+        android:gravity="center"
+        android:text=""/>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/width_15dp"
+        android:layout_toRightOf="@+id/icon_small">
+
+        <ImageView
+            android:id="@+id/icon_big"
+            android:layout_width="@dimen/width_50dp"
+            android:layout_height="@dimen/width_50dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/default_head"/>
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/rank_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"
+            android:src="@mipmap/icon_second"/>
+    </FrameLayout>
+
+    <LinearLayout
+        style="@style/WrapWrap"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/phone"
+            style="@style/WrapAuto"
+            android:text="undefined"
+            android:textColor="@color/common_h1"
+            android:textSize="@dimen/textsize_14sp"/>
+
+        <TextView
+            android:id="@+id/introduce_count"
+            style="@style/WrapAuto"
+            android:layout_marginTop="@dimen/height_5dp"
+            android:text="@string/introduce_count"
+            android:textColor="@color/common_h2"
+            android:textSize="@dimen/textsize_12sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/icon_grade"
+        style="@style/WrapWrap"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="undefined"
+        android:textColor="@color/common_h1"/>
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_parent_toast"
+    android:layout_width="290dp"
+    android:layout_height="200dp"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/WrapWrap"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:gravity="center"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:text="温馨提醒"
+        android:textColor="#323232"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/WrapWrap"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="商家地址已经复制，可粘贴"
+        android:textColor="#676767"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/WrapWrap"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:text="您的手机地图查询位置"
+        android:textColor="#676767"
+        android:textSize="15sp"/>
+
+    <LinearLayout
+        style="@style/MatchWrap"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <View
+            style="@style/MatchOne"
+            android:background="#e0e0e0"/>
+
+        <TextView
+            android:id="@+id/tv_toast_sure"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:gravity="center"
+            android:text="我知道了"
+            android:textColor="#0690f0"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+</RelativeLayout>

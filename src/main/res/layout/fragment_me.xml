@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/MatchMatch"
+    android:background="@color/gray5"
+    android:orientation="vertical">
+
+    <cn.bingoogolapple.bgabanner.BGABanner
+        android:id="@+id/banner_guide_content"
+        style="@style/BannerDefaultStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/width_200dp"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/view_marqueeView"
+        style="@style/MatchWrap"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/height_5dp"
+        android:paddingLeft="@dimen/width_15dp"
+        android:paddingRight="@dimen/width_15dp"
+        android:paddingTop="@dimen/height_5dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_speaker3"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_red_loudspeaker"/>
+
+        <com.szinternet.crm.marqueeview.MarqueeView
+            android:id="@+id/marqueeView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/iv_speaker3"
+            app:mvAnimDuration="800"
+            app:mvDirection="right_to_left"
+            app:mvGravity="left"
+            app:mvInterval="2500"
+            app:mvSingleLine="true"
+            app:mvTextColor="@color/common_h1"
+            app:mvTextSize="14sp"/>
+    </RelativeLayout>
+
+    <com.szinternet.crm.view.CustomGridView
+        android:id="@+id/grid_view"
+        style="@style/MatchWrap"
+        android:layout_marginTop="@dimen/height_10dp"
+        android:background="@color/white"
+        android:columnWidth="@dimen/height_80dp"
+        android:gravity="center"
+        android:horizontalSpacing="@dimen/width_15dp"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp"
+        android:visibility="gone">
+    </com.szinternet.crm.view.CustomGridView>
+
+    <LinearLayout
+        android:id="@+id/llMyInfo"
+        android:layout_width="match_parent"
+        android:layout_height="178px"
+        android:layout_marginTop="@dimen/height_15dp"
+        android:background="@drawable/selector_option_item"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:paddingRight="6px">
+
+        <ImageView
+            android:id="@+id/ivHeader"
+            android:layout_width="140px"
+            android:layout_height="140px"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="@dimen/width_15dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="140px"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvName"
+                style="@style/WrapWrap"
+                android:layout_marginBottom="6px"
+                android:singleLine="true"
+                android:text="沧晓"
+                android:textColor="@color/gray0"
+                android:textSize="30px"/>
+
+            <TextView
+                android:id="@+id/tvAccount"
+                style="@style/WrapWrap"
+                android:layout_marginTop="6px"
+                android:singleLine="true"
+                android:text="没留下什么"
+                android:textColor="@color/gray2"
+                android:textSize="26px"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivQRCordCard"
+            android:layout_width="40px"
+            android:layout_height="40px"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/width_15dp"
+            android:src="@mipmap/ic_setting_blue"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        style="@style/MatchMatch"
+        android:orientation="vertical">
+
+        <com.lqr.optionitemview.OptionItemView
+            android:id="@+id/oivAlbum"
+            style="@style/OptionItem"
+            android:layout_marginTop="@dimen/height_15dp"
+            android:background="@drawable/selector_option_item"
+            android:clickable="true"
+            app:left_image_margin_left="@dimen/width_15dp"
+            app:left_image_margin_right="@dimen/width_15dp"
+            app:left_src="@mipmap/ic_setting_blue"
+            app:left_text="设置"
+            app:left_text_color="@color/common_h1"
+            app:left_text_size="16sp"/>
+
+        <RelativeLayout
+            style="@style/MatchWrap"
+            android:background="@color/white">
+
+            <View
+                style="@style/Line"
+                android:layout_marginLeft="@dimen/width_15dp"
+                android:layout_marginRight="@dimen/width_15dp"
+                />
+        </RelativeLayout>
+
+        <com.lqr.optionitemview.OptionItemView
+            android:id="@+id/oivCollection"
+            style="@style/OptionItem"
+            android:background="@drawable/selector_option_item"
+            android:clickable="true"
+            app:left_image_margin_left="@dimen/width_15dp"
+            app:left_image_margin_right="@dimen/width_15dp"
+            app:left_src="@mipmap/ic_setting_blue"
+            app:left_text="设置"
+            app:left_text_color="@color/common_h1"
+            app:left_text_size="16sp"/>
+
+        <com.lqr.optionitemview.OptionItemView
+            android:id="@+id/oivWallet"
+            style="@style/OptionItem"
+            android:layout_marginTop="@dimen/height_15dp"
+            android:background="@drawable/selector_option_item"
+            android:clickable="true"
+            app:left_image_margin_left="@dimen/width_15dp"
+            app:left_image_margin_right="@dimen/width_15dp"
+            app:left_src="@mipmap/ic_setting_blue"
+            app:left_text="设置"
+            app:left_text_color="@color/common_h1"
+            app:left_text_size="16sp"/>
+
+        <RelativeLayout
+            style="@style/MatchWrap"
+            android:background="@color/white">
+
+            <View
+                style="@style/Line"
+                android:layout_marginLeft="@dimen/width_15dp"
+                android:layout_marginRight="@dimen/width_15dp"
+                />
+        </RelativeLayout>
+
+        <com.lqr.optionitemview.OptionItemView
+            android:id="@+id/oivCardPaket"
+            style="@style/OptionItem"
+            android:background="@drawable/selector_option_item"
+            android:clickable="true"
+            app:left_image_margin_left="@dimen/width_15dp"
+            app:left_image_margin_right="@dimen/width_15dp"
+            app:left_src="@mipmap/ic_setting_blue"
+            app:left_text="设置"
+            app:left_text_color="@color/common_h1"
+            app:left_text_size="16sp"/>
+
+
+        <com.lqr.optionitemview.OptionItemView
+            android:id="@+id/oivSetting"
+            style="@style/OptionItem"
+            android:layout_marginTop="@dimen/height_15dp"
+            android:background="@drawable/selector_option_item"
+            android:clickable="true"
+            app:left_image_margin_left="@dimen/width_15dp"
+            app:left_image_margin_right="@dimen/width_15dp"
+            app:left_src="@mipmap/ic_setting_blue"
+            app:left_text="设置"
+            app:left_text_color="@color/common_h1"
+            app:left_text_size="16sp"/>
+    </LinearLayout>
+</LinearLayout>

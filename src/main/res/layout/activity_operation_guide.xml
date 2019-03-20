@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/MatchMatch"
+              android:background="#1B81D1"
+              android:orientation="vertical">
+
+    <include layout="@layout/toolbar"/>
+
+    <com.shizhefei.view.largeimage.LargeImageView
+        android:id="@+id/image"
+        style="@style/MatchMatch"
+        android:scrollbars="vertical|horizontal"/>
+</LinearLayout>

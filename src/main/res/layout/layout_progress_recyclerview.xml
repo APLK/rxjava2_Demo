@@ -1,0 +1,29 @@
+<com.szinternet.crm.recycle.swipe.SwipeRefreshLayout android:id="@+id/ptr_layout"
+                                                    style="@style/MatchMatch"
+                                                    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@android:id/list"
+        style="@style/MatchMatch"
+        android:clickable="true"
+        android:scrollbars="vertical|horizontal"/>
+
+    <FrameLayout
+        android:id="@+id/empty"
+        style="@style/MatchMatch"
+        android:clickable="true"
+        />
+
+    <FrameLayout
+        android:id="@+id/progress"
+        style="@style/MatchMatch"
+        android:clickable="true"
+        />
+
+    <FrameLayout
+        android:id="@+id/error"
+        style="@style/MatchMatch"
+        android:clickable="true"
+        />
+
+</com.szinternet.crm.recycle.swipe.SwipeRefreshLayout>

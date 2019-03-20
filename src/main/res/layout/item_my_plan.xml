@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/MatchWrap"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/repayment_view"
+        style="@style/MatchWrap"
+        android:layout_marginBottom="@dimen/width_12dp"
+        android:layout_marginLeft="@dimen/width_12dp"
+        android:layout_marginRight="@dimen/width_12dp"
+        android:layout_marginTop="@dimen/width_12dp"
+        android:background="@drawable/shape_select_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/top"
+            style="@style/MatchWrap"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/height_5dp"
+            android:paddingLeft="@dimen/width_12dp"
+            android:paddingRight="@dimen/width_12dp"
+            android:paddingTop="@dimen/height_5dp">
+
+            <LinearLayout
+                style="@style/MatchWrap">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    style="@style/WrapWrap"
+                    android:text="中国银行(尾号8888)"
+                    android:textColor="@color/common_h1"/>
+
+                <TextView
+                    android:id="@+id/tv_state"
+                    style="@style/WrapWrap"
+                    android:layout_marginLeft="@dimen/width_20dp"
+                    android:background="@drawable/shape_repayment_bg"
+                    android:text="还款中"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_time"
+                style="@style/WrapWrap"
+                android:layout_marginTop="@dimen/width_3dp"
+                android:text="@string/plan_time"
+                android:textColor="@color/common_h1"
+                android:textSize="@dimen/sp_12"/>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line"
+            style="@style/MatchOne"
+            android:layout_below="@+id/top"
+            android:layout_marginRight="@dimen/width_60dp"
+            android:background="@color/common_divider_narrow"/>
+
+        <RelativeLayout
+            style="@style/MatchWrap"
+            android:layout_below="@+id/line"
+            android:layout_marginBottom="@dimen/height_10dp"
+            android:paddingLeft="@dimen/width_12dp"
+            android:paddingRight="@dimen/width_12dp">
+
+            <LinearLayout
+                style="@style/MatchWrap"
+                android:layout_marginRight="@dimen/width_20dp"
+                android:layout_marginTop="@dimen/height_8dp"
+                android:layout_toLeftOf="@+id/repayment_state">
+
+                <TextView
+                    android:id="@+id/tv_money"
+                    style="@style/AutoWrap"
+                    android:lineSpacingExtra="@dimen/height_8dp"
+                    android:text="@string/plan_money"
+                    android:textColor="@color/common_h1"
+                    android:textSize="@dimen/sp_12"/>
+
+                <TextView
+                    android:id="@+id/tv_repayment_day"
+                    style="@style/AutoWrap"
+                    android:lineSpacingExtra="@dimen/height_8dp"
+                    android:text="@string/plan_count"
+                    android:textColor="@color/common_h1"
+                    android:textSize="@dimen/sp_12"/>
+
+                <TextView
+                    android:id="@+id/tv_charge"
+                    style="@style/AutoWrap"
+                    android:lineSpacingExtra="@dimen/height_8dp"
+                    android:text="@string/plan_server"
+                    android:textColor="@color/common_h1"
+                    android:textSize="@dimen/sp_12"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/icon_enter"
+            style="@style/WrapWrap"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/width_15dp"
+            android:background="@mipmap/icon_enter"/>
+    </RelativeLayout>
+</RelativeLayout>

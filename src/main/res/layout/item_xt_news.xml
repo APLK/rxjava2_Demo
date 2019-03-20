@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/MatchWrap"
+              android:layout_marginTop="@dimen/height_20dp"
+              android:background="@color/transparent"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/time"
+        style="@style/WrapWrap"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/height_10dp"
+        android:background="@color/gray8"
+        android:gravity="center"
+        android:padding="@dimen/height_5dp"
+        android:text="2017-10-25 16:19:22"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_12"/>
+
+    <RelativeLayout
+        style="@style/MatchWrap"
+        android:layout_marginLeft="@dimen/width_12dp">
+
+        <ImageView
+            android:id="@+id/icon"
+            style="@style/WrapWrap"
+            android:layout_marginTop="@dimen/height_10dp"
+            android:src="@mipmap/xt_news"/>
+
+        <LinearLayout
+            style="@style/MatchWrap"
+            android:layout_marginLeft="@dimen/width_12dp"
+            android:layout_marginRight="@dimen/width_35dp"
+            android:layout_toRightOf="@+id/icon"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/WrapWrap"
+                android:gravity="center"
+                android:text="系统消息"
+                android:textColor="@color/common_h2"
+                android:textSize="@dimen/sp_12"/>
+
+            <LinearLayout
+                android:id="@+id/msg_view"
+                style="@style/MatchWrap"
+                android:layout_marginTop="@dimen/height_5dp"
+                android:background="@drawable/shape_select_bg"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/msg_title"
+                    style="@style/WrapWrap"
+                    android:text="刷卡"
+                    android:textColor="@color/common_h1"
+                    android:textSize="@dimen/textsize_15sp"/>
+
+                <TextView
+                    android:id="@+id/msg_content"
+                    style="@style/WrapWrap"
+                    android:layout_marginTop="@dimen/width_3dp"
+                    android:gravity="center"
+                    android:text="24小时秒到"
+                    android:textColor="@color/common_h2"
+                    android:textSize="@dimen/sp_12"/>
+
+                <View
+                    style="@style/MatchOne"
+                    android:layout_marginTop="@dimen/height_15dp"
+                    android:background="@color/common_h2"/>
+
+                <TextView
+                    style="@style/WrapWrap"
+                    android:layout_marginTop="@dimen/width_8dp"
+                    android:gravity="center"
+                    android:text="查看详情"
+                    android:textColor="@color/common_h2"
+                    android:textSize="@dimen/sp_12"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

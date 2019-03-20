@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    style="@style/MatchMatch"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        style="@style/MatchMatch"
+        android:scrollbars="none">
+
+        <LinearLayout
+            style="@style/MatchMatch"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="@dimen/height_80dp"
+                android:layout_height="@dimen/height_80dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/height_80dp"
+                android:src="@mipmap/ic_launcher"/>
+
+            <View
+                style="@style/MatchOne"
+                android:layout_marginTop="@dimen/height_80dp"
+                android:background="@color/grey_e0e0e0"/>
+
+            <!--账号-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/width_45dp"
+                android:layout_marginLeft="@dimen/width_20dp"
+                android:layout_marginRight="@dimen/width_20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/tv_account_login"
+                    style="@style/WrapMatch"
+                    android:gravity="center_vertical"
+                    android:text="手机号"
+                    android:textColor="@color/gray_323232"
+                    android:textSize="@dimen/textsize_15sp"
+                    />
+
+                <com.szinternet.crm.view.TelEditText
+                    android:id="@+id/et_login_phone"
+                    style="@style/AutoMatch"
+                    android:layout_marginLeft="@dimen/width_30dp"
+                    android:background="@null"
+                    android:hint="请输入手机号"
+                    android:inputType="number"
+                    android:maxLength="13"
+                    android:textColor="@color/gray_676767"
+                    android:textColorHint="@color/text_color_hint"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/textsize_15sp"/>
+
+
+                <ImageView
+                    android:id="@+id/iv_delete_account"
+                    android:layout_width="@dimen/width_30dp"
+                    android:layout_height="@dimen/width_30dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/btn_delete"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+            <View
+                style="@style/MatchOne"
+                android:layout_marginLeft="100dp"
+                android:background="@color/grey_e0e0e0"/>
+
+
+            <!--密码-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/width_45dp"
+                android:layout_marginLeft="@dimen/width_20dp"
+                android:layout_marginRight="@dimen/width_20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    style="@style/WrapMatch"
+                    android:gravity="center_vertical"
+                    android:text="密    码"
+                    android:textColor="@color/gray_323232"
+                    android:textSize="@dimen/textsize_15sp"
+
+                    />
+
+                <com.szinternet.crm.view.ClearEditText
+                    android:id="@+id/et_login_password"
+                    style="@style/AutoMatch"
+                    android:layout_marginLeft="@dimen/width_30dp"
+                    android:background="@null"
+                    android:hint="请输入登录密码(密码长度15位以下)"
+                    android:inputType="textPassword"
+                    android:maxLength="16"
+                    android:textColor="@color/gray_676767"
+                    android:textColorHint="@color/text_color_hint"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/textsize_15sp"/>
+
+                <ImageView
+                    android:id="@+id/iv_delete_pwd"
+                    android:layout_width="@dimen/width_30dp"
+                    android:layout_height="@dimen/width_30dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/btn_delete"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+            <View
+                style="@style/MatchOne"
+                android:background="@color/grey_e0e0e0"/>
+
+
+            <!--登录按钮-->
+            <Button
+                android:id="@+id/bt_login"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/width_45dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/height_25dp"
+                android:layout_marginRight="@dimen/height_25dp"
+                android:layout_marginTop="@dimen/height_40dp"
+                android:background="@drawable/selector_btn_login"
+                android:gravity="center"
+                android:text="@string/login"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/textsize_18sp"/>
+
+            <LinearLayout
+                style="@style/MatchWrap"
+                android:layout_marginTop="@dimen/height_20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <!--新用户注册-->
+                <TextView
+                    android:id="@+id/tv_login_new_user"
+                    style="@style/AutoMatch"
+                    android:layout_marginLeft="@dimen/width_12dp"
+                    android:gravity="center"
+                    android:text="新用户注册"
+                    android:textColor="@color/toolbar"
+                    android:textSize="@dimen/textsize_15sp"/>
+
+                <TextView
+                    android:id="@+id/tv_login_forget_user"
+                    style="@style/AutoMatch"
+                    android:layout_marginRight="@dimen/width_12dp"
+                    android:gravity="center"
+                    android:text="找回密码"
+                    android:textColor="@color/toolbar"
+                    android:textSize="@dimen/textsize_15sp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

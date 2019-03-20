@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/WrapWrap"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/headIv"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/default_head"
+        />
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/WrapWrap"
+        android:layout_marginTop="@dimen/width_8dp"
+        android:gravity="center"
+        android:textColor="@color/common_h2"
+        android:textSize="14sp"
+        />
+
+</LinearLayout>

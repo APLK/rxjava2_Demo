@@ -1,0 +1,71 @@
+<resources>
+    <!-- unit all -->
+    <dimen name="width_1dp">1.33dp</dimen>
+    <dimen name="width_3dp">2.66dp</dimen>
+    <dimen name="width_5dp">6.65dp</dimen>
+    <dimen name="width_6dp">8dp</dimen>
+    <dimen name="width_16dp">21.3dp</dimen>
+    <dimen name="width_10dp">13.3dp</dimen>
+    <dimen name="width_12dp">15.9dp</dimen>
+    <dimen name="width_8dp">10.64dp</dimen>
+    <dimen name="width_15dp">19.9dp</dimen>
+    <dimen name="width_20dp">26.6dp</dimen>
+
+    <dimen name="width_35dp">46.6dp</dimen>
+
+    <dimen name="width_40dp">53.3dp</dimen>
+    <dimen name="width_45dp">59.9dp</dimen>
+    <dimen name="width_50dp">66.6dp</dimen>
+    <dimen name="width_55dp">73.3dp</dimen>
+    <dimen name="width_60dp">79.8dp</dimen>
+    <dimen name="width_70dp">93.3dp</dimen>
+    <dimen name="width_75dp">99.9dp</dimen>
+    <dimen name="width_82dp">109.3dp</dimen>
+    <dimen name="width_90dp">119.9dp</dimen>
+    <dimen name="width_100dp">133.2dp</dimen>
+    <dimen name="width_120dp">159dp</dimen>
+    <dimen name="width_140dp">186.6dp</dimen>
+    <dimen name="width_185dp">246.6dp</dimen>
+    <dimen name="width_160dp">213dp</dimen>
+    <dimen name="width_200dp">266.6dp</dimen>
+    <!-- height -->
+    <dimen name="height_1dp">1.25dp</dimen>
+    <dimen name="height_2dp">2.5dp</dimen>
+    <dimen name="height_4dp">5dp</dimen>
+    <dimen name="height_5dp">6.25dp</dimen>
+    <dimen name="height_7dp">8.75dp</dimen>
+    <dimen name="height_8dp">10dp</dimen>
+    <dimen name="height_10dp">12.5dp</dimen>
+    <dimen name="height_12dp">15dp</dimen>
+    <dimen name="height_15dp">18.75dp</dimen>
+    <dimen name="height_20dp">25dp</dimen>
+    <dimen name="height_25dp">31.2dp</dimen>
+    <dimen name="width_25dp">33.3dp</dimen>
+    <dimen name="width_30dp">39.9dp</dimen>
+    <dimen name="height_33dp">41.2dp</dimen>
+    <dimen name="height_36dp">45dp</dimen>
+    <dimen name="height_40dp">50dp</dimen>
+    <dimen name="height_50dp">62.5dp</dimen>
+    <dimen name="height_30dp">37.5dp</dimen>
+    <dimen name="height_32dp">40dp</dimen>
+    <dimen name="height_55dp">68.7dp</dimen>
+    <dimen name="height_60dp">75dp</dimen>
+
+    <dimen name="height_70dp">87.5dp</dimen>
+    <dimen name="height_80dp">100dp</dimen>
+
+    <dimen name="height_100dp">125dp</dimen>
+    <dimen name="height_125dp">156dp</dimen>
+    <dimen name="height_147dp">183dp</dimen>
+    <!-- txt size -->
+    <dimen name="textsize_12sp">15.4sp</dimen>
+    <dimen name="textsize_13sp">16.7sp</dimen>
+    <dimen name="textsize_15sp">19.35sp</dimen>
+    <dimen name="textsize_16sp">20.64sp</dimen>
+    <dimen name="textsize_17sp">21.93sp</dimen>
+    <dimen name="textsize_14sp">18sp</dimen>
+    <dimen name="textsize_18sp">23.2sp</dimen>
+    <dimen name="textsize_19sp">24.5sp</dimen>
+    <dimen name="textsize_20sp">25.8sp</dimen>
+
+</resources>

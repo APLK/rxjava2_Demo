@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/MatchMatch"
+              android:background="@color/actionsheet_blue"
+              android:orientation="vertical">
+
+    <include layout="@layout/toolbar"/>
+
+    <ImageView
+        style="@style/MatchMatch"
+        android:layout_marginBottom="@dimen/width_60dp"
+        android:layout_marginLeft="@dimen/width_20dp"
+        android:layout_marginRight="@dimen/width_20dp"
+        android:layout_marginTop="@dimen/height_40dp"
+        android:src="@mipmap/wx_kf"/>
+</LinearLayout>

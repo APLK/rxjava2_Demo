@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/MatchMatch"
+    android:background="@color/common_gray_bg"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/toolbar"/>
+
+    <ScrollView
+        style="@style/MatchMatch"
+        android:scrollbars="none">
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            style="@style/MatchMatch"
+            android:orientation="vertical">
+
+            <View
+                style="@style/MatchOne"
+                android:layout_marginTop="@dimen/height_20dp"
+                android:background="@color/grey_e0e0e0"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/width_45dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/width_20dp"
+                android:paddingRight="@dimen/width_20dp"
+                >
+
+                <TextView
+                    style="@style/WrapMatch"
+                    android:gravity="center_vertical"
+                    android:text="姓      名"
+                    android:textColor="@color/gray_323232"
+                    android:textSize="@dimen/textsize_15sp"
+                    />
+
+                <EditText
+                    android:id="@+id/et_real_name"
+                    style="@style/AutoMatch"
+                    android:layout_marginLeft="@dimen/height_15dp"
+                    android:background="@null"
+                    android:hint="请输入姓名"
+                    android:inputType="text"
+                    android:textColor="@color/gray_676767"
+                    android:textColorHint="@color/text_color_hint"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/textsize_15sp"/>
+
+            </LinearLayout>
+
+            <View
+                style="@style/MatchOne"
+                android:background="@color/grey_e0e0e0"/>
+
+
+            <View
+                style="@style/MatchOne"
+                android:layout_marginTop="@dimen/height_20dp"
+                android:background="@color/grey_e0e0e0"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/width_45dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/width_20dp"
+                android:paddingRight="@dimen/width_20dp"
+                >
+
+                <TextView
+                    android:id="@+id/textView4"
+                    style="@style/WrapMatch"
+                    android:gravity="center_vertical"
+                    android:text="储  蓄  卡"
+                    android:textColor="@color/gray_323232"
+                    android:textSize="@dimen/textsize_15sp"/>
+
+                <com.szinternet.crm.view.ClearEditText
+                    android:id="@+id/et_card"
+                    style="@style/AutoMatch"
+                    android:layout_marginLeft="@dimen/height_15dp"
+                    android:background="@null"
+                    android:hint="请输入储蓄卡卡号"
+                    android:inputType="number"
+                    android:textColor="@color/gray_676767"
+                    android:textColorHint="@color/text_color_hint"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/textsize_15sp"/>
+
+                <ImageView
+                    android:id="@+id/iv_delete_card"
+                    android:layout_width="@dimen/width_30dp"
+                    android:layout_height="@dimen/width_30dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/btn_delete"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+            <View
+                style="@style/MatchOne"
+                android:background="@color/grey_e0e0e0"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/width_45dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/width_20dp"
+                android:paddingRight="@dimen/width_20dp"
+                >
+
+                <TextView
+                    style="@style/WrapMatch"
+                    android:gravity="center_vertical"
+                    android:text="开户银行"
+                    android:textColor="@color/gray_323232"
+                    android:textSize="@dimen/textsize_15sp"
+
+                    />
+
+                <com.szinternet.crm.view.PopSpinnerView
+                    android:id="@+id/et_bank"
+                    style="@style/AutoMatch"
+                    android:layout_marginLeft="@dimen/height_15dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    app:textName="-----请选择银行-----"
+                    app:textSize="14"/>
+                <!--<EditText
+                    android:id="@+id/et_bank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/height_15dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="请输入选择银行"
+                    android:inputType="text"
+                    android:textColor="@color/gray_676767"
+                    android:textColorHint="@color/text_color_hint"
+                    android:textCursorDrawable="@null"
+                    android:textSize="15sp"/>-->
+            </LinearLayout>
+
+            <View
+                style="@style/MatchOne"
+                android:background="@color/grey_e0e0e0"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/width_45dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/width_20dp"
+                android:paddingRight="@dimen/width_20dp"
+                >
+
+                <TextView
+                    style="@style/WrapMatch"
+                    android:gravity="center_vertical"
+                    android:text="开户支行"
+                    android:textColor="@color/gray_323232"
+                    android:textSize="@dimen/textsize_15sp"
+                    />
+
+                <EditText
+                    android:id="@+id/et_bank_branch"
+                    style="@style/AutoMatch"
+                    android:layout_marginLeft="@dimen/height_15dp"
+                    android:background="@null"
+                    android:hint="请输入开户支行(区县级支行)"
+                    android:inputType="text"
+                    android:textColor="@color/gray_676767"
+                    android:textColorHint="@color/text_color_hint"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/textsize_15sp"/>
+
+            </LinearLayout>
+            <View
+                style="@style/MatchOne"
+                android:background="@color/grey_e0e0e0"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/width_45dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/width_20dp"
+                android:paddingRight="@dimen/width_20dp"
+                >
+
+                <TextView
+                    style="@style/WrapMatch"
+                    android:gravity="center_vertical"
+                    android:text="预留手机"
+                    android:textColor="@color/gray_323232"
+                    android:textSize="@dimen/textsize_15sp"
+                    />
+
+                <com.szinternet.crm.view.TelEditText
+                    android:id="@+id/et_phonenum"
+                    style="@style/AutoMatch"
+                    android:layout_marginLeft="@dimen/height_15dp"
+                    android:background="@null"
+                    android:hint="请输入预留手机号"
+                    android:inputType="number"
+                    android:maxLength="13"
+                    android:textColor="@color/gray_676767"
+                    android:textColorHint="@color/text_color_hint"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/textsize_15sp"/>
+
+
+                <ImageView
+                    android:id="@+id/iv_delete_account"
+                    android:layout_width="@dimen/width_30dp"
+                    android:layout_height="@dimen/width_30dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/btn_delete"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+            <View
+                style="@style/MatchOne"
+                android:background="@color/grey_e0e0e0"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/width_45dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/width_20dp"
+                android:paddingRight="@dimen/width_20dp"
+                >
+
+                <TextView
+                    style="@style/WrapMatch"
+                    android:gravity="center_vertical"
+                    android:text="验  证  码"
+                    android:textColor="@color/gray_323232"
+                    android:textSize="@dimen/textsize_15sp"
+
+                    />
+
+                <EditText
+                    android:id="@+id/et_phone_ver"
+                    style="@style/AutoMatch"
+                    android:layout_marginLeft="@dimen/height_15dp"
+                    android:background="@null"
+                    android:hint="请输入手机短信验证码"
+                    android:inputType="text"
+                    android:maxLength="8"
+                    android:textColor="@color/gray_676767"
+                    android:textColorHint="@color/text_color_hint"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/textsize_15sp"/>
+
+                <TextView
+                    android:id="@+id/tv_get_ver"
+                    style="@style/WrapMatch"
+                    android:gravity="center_vertical"
+                    android:text="@string/get_ver"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/textsize_15sp"
+
+                    />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bt_next"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/width_45dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/width_20dp"
+                android:layout_marginRight="@dimen/width_20dp"
+                android:layout_marginTop="@dimen/height_40dp"
+                android:background="@drawable/selector_btn_login"
+                android:gravity="center"
+                android:text="下一步"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/textsize_18sp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

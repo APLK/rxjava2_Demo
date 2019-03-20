@@ -1,0 +1,140 @@
+apply plugin: 'com.android.application'
+apply plugin: 'android-apt'
+apply plugin: 'com.neenbedankt.android-apt'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.1"
+    defaultConfig {
+        applicationId "com.szinternet.crm"
+        minSdkVersion 16
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+    lintOptions {
+        disable "ResourceType"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.debug
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    packagingOptions {
+//        exclude('META-INF/DEPENDENCIES')
+//        exclude('META-INF/NOTICE')
+//        exclude('META-INF/LICENSE')
+        exclude('META-INF/rxjava.properties')
+    }
+    configurations.all {
+        resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+            def requested = details.requested
+            if (requested.group == 'com.android.support') {
+                if (!requested.name.startsWith("multidex")) {
+                    details.useVersion '25.0.1'
+                }
+            }
+        }
+    }
+
+    signingConfigs {
+        debug {
+            storeFile file('src/main/key/crm_key.jks')
+            storePassword "crm2018#"
+            keyAlias "crm"
+            keyPassword "crm2018#"
+        }
+    }
+}
+
+dependencies {
+
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.0.1'
+    compile 'com.android.support:design:25.0.1'
+    /*//Rxjava(MVP思想)
+    compile 'io.reactivex:rxandroid:1.1.0'
+    compile 'io.reactivex:rxjava:1.1.5'
+    compile 'com.jakewharton.rxbinding:rxbinding:0.4.0'
+    //retrofit
+    compile 'com.squareup.okhttp3:okhttp:3.2.0'
+    compile 'com.squareup.retrofit2:retrofit:2.0.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.0.0'
+    compile 'com.squareup.retrofit2:converter-scalars:2.1.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.0.0'*/
+
+
+    compile 'com.squareup.okhttp3:okhttp:3.8.0'
+    compile 'com.squareup.retrofit2:retrofit:2.3.0'
+    compile 'com.squareup.retrofit2:converter-scalars:2.3.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.3.0'
+
+    compile 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
+    compile 'io.reactivex.rxjava2:rxjava:2.0.7'
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    compile 'com.jakewharton.rxbinding2:rxbinding:2.0.0'
+
+    //glide图片加载
+    compile 'com.github.bumptech.glide:glide:4.0.0'
+    /*按钮悬浮点击动画效果*/
+    compile 'com.melnykov:floatingactionbutton:1.3.0'
+    //layout布局id查找
+    compile 'com.jakewharton:butterknife:8.4.0'
+    apt 'com.jakewharton:butterknife-compiler:8.4.0'
+    //注解
+//    provided 'org.glassfish:javax.annotation:10.0-b28'
+//    compile 'com.google.dagger:dagger:2.0.2'
+//    apt 'com.google.dagger:dagger-compiler:2.0.2'
+    compile 'com.google.dagger:dagger:2.14.1'
+    apt 'com.google.dagger:dagger-compiler:2.14.1'
+    // 主要功能是替代Intent,Handler,BroadCast在Fragment，Activity，Service，线程之间传递消息.优点是开销小，代码更优雅
+    compile 'org.greenrobot:eventbus:3.0.0'
+    //等待框
+    compile 'com.kaopiz:kprogresshud:1.0.2'
+    //选项条目布局控件
+    compile 'com.lqr.optionitemview:library:1.0.7'
+    //图片加载
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    //长图加载
+    compile 'com.shizhefei:LargeImageView:1.0.9'
+    //九格宫图片选择
+    compile 'com.github.LuckSiege.PictureSelector:picture_library:v2.1.7'
+    //广告自动轮播
+    compile 'com.android.support:support-v4:25.1.0'
+    compile 'cn.bingoogolapple:bga-banner:2.1.9@aar'
+    //recycleview helper
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:v2.6.1'
+    //开关
+    compile 'ch.ielse:switchbutton:1.0.0'
+    //二维码生成
+    compile 'com.google.zxing:core:3.3.0'
+    compile 'cn.bingoogolapple:bga-qrcodecore:1.1.7@aar'
+    compile 'cn.bingoogolapple:bga-zxing:1.1.7@aar'
+    //微信支付
+    compile 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:+'
+    //java.lang.NoClassDefFoundError
+    compile 'com.android.support:multidex:1.0.1'
+    //内存检测
+//    testCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.4'
+//    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5.4'
+//    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.4'
+    testCompile 'junit:junit:4.12'
+    compile project(path: ':EasyAdapterLibrary')
+    compile files('libs/SocialSDK_QQ_Simplify.jar')
+    compile files('libs/SocialSDK_Sina_Simplify.jar')
+    compile files('libs/SocialSDK_WeChat_Simplify.jar')
+    compile files('libs/umeng_shareboard_widget.jar')
+    compile files('libs/umeng_social_api.jar')
+    compile files('libs/umeng_social_net.jar')
+    compile files('libs/umeng_social_shareboard.jar')
+    compile files('libs/umeng_social_shareview.jar')
+    compile files('libs/umeng_social_tool.jar')
+    compile files('libs/alipaySdk-20170922.jar')
+}

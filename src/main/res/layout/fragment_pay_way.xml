@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/MatchMatch"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+
+    <RelativeLayout
+        style="@style/MatchWrap"
+        android:background="@color/common_gray_bg"
+        android:padding="@dimen/height_8dp">
+
+        <TextView
+            style="@style/WrapWrap"
+            android:layout_centerInParent="true"
+            android:text="选择支付方式"/>
+
+        <ImageView
+            android:id="@+id/close"
+            style="@style/WrapWrap"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/width_5dp"
+            android:padding="@dimen/width_10dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/icon_close"/>
+    </RelativeLayout>
+
+    <View
+        style="@style/MatchOne"
+        android:background="@color/line"/>
+
+    <ScrollView
+        style="@style/MatchWrap">
+
+        <LinearLayout
+            style="@style/MatchWrap"
+            android:orientation="vertical">
+
+            <com.szinternet.crm.view.ScrollviewListView
+                android:id="@+id/lv_bank"
+                android:cacheColorHint="@android:color/transparent"
+                style="@style/MatchMatch"/>
+
+            <View
+                style="@style/MatchOne"
+                android:background="@color/line"/>
+
+            <TextView
+                android:id="@+id/add_new_card"
+                style="@style/MatchWrap"
+                android:textColor="@color/common_h1"
+                android:drawableLeft="@mipmap/add_bk_card"
+                android:drawablePadding="@dimen/width_8dp"
+                android:drawableRight="@mipmap/icon_enter"
+                android:gravity="center_vertical"
+                android:padding="@dimen/width_10dp"
+                android:text="添加新卡"/>
+
+            <View
+                style="@style/MatchOne"
+                android:background="@color/line"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

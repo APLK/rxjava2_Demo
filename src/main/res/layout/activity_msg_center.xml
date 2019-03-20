@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/MatchMatch"
+              android:background="@color/common_gray_bg"
+              android:orientation="vertical">
+
+    <include layout="@layout/toolbar"/>
+
+    <com.szinternet.crm.view.ReboundScrollView
+        style="@style/MatchMatch"
+        android:layout_below="@+id/ivHeader">
+
+        <LinearLayout
+            style="@style/MatchWrap"
+            android:layout_marginTop="@dimen/height_20dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/xt_view"
+                style="@style/MatchWrap"
+                android:background="@drawable/selector_option_item"
+                android:clickable="true"
+                android:padding="@dimen/activity_vertical_margin">
+
+                <ImageView
+                    android:id="@+id/icon"
+                    style="@style/WrapWrap"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/xt_news"/>
+
+                <LinearLayout
+                    style="@style/WrapWrap"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/width_6dp"
+                    android:layout_toRightOf="@+id/icon"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/WrapAuto"
+                        android:gravity="center"
+                        android:padding="@dimen/width_3dp"
+                        android:text="系统消息"
+                        android:textColor="@color/common_h1"
+                        android:textSize="@dimen/textsize_16sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_xt_news"
+                        style="@style/WrapAuto"
+                        android:gravity="center"
+                        android:padding="@dimen/width_3dp"
+                        android:text="刷卡"
+                        android:textColor="@color/common_h2"
+                        android:textSize="@dimen/textsize_12sp"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_xt_time"
+                    style="@style/WrapWrap"
+                    android:layout_alignParentRight="true"
+                    android:text="2017-10-25 16:19:22"
+                    android:textColor="@color/common_h2"
+                    android:textSize="@dimen/sp_12"/>
+            </RelativeLayout>
+
+            <View
+                style="@style/MatchOne"
+                android:background="@color/common_divider_narrow"/>
+
+            <RelativeLayout
+                android:id="@+id/share_view"
+                style="@style/MatchWrap"
+                android:background="@drawable/selector_option_item"
+                android:clickable="true"
+                android:padding="@dimen/activity_vertical_margin">
+
+                <ImageView
+                    android:id="@+id/icon2"
+                    style="@style/WrapWrap"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/share_new"/>
+
+                <LinearLayout
+                    style="@style/WrapWrap"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/width_6dp"
+                    android:layout_toRightOf="@+id/icon2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/WrapAuto"
+                        android:gravity="center"
+                        android:padding="@dimen/width_3dp"
+                        android:text="分润消息"
+                        android:textColor="@color/common_h1"
+                        android:textSize="@dimen/textsize_16sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_share_news"
+                        style="@style/WrapAuto"
+                        android:gravity="center"
+                        android:padding="@dimen/width_3dp"
+                        android:text="您暂无分润消息"
+                        android:textColor="@color/common_h2"
+                        android:textSize="@dimen/textsize_12sp"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_share_time"
+                    style="@style/WrapWrap"
+                    android:layout_alignParentRight="true"
+                    android:text="2017-10-25 16:19:22"
+                    android:textColor="@color/common_h2"
+                    android:textSize="@dimen/sp_12"/>
+            </RelativeLayout>
+
+            <View
+                style="@style/MatchOne"
+                android:background="@color/common_divider_narrow"/>
+
+            <RelativeLayout
+                android:id="@+id/tg_view"
+                style="@style/MatchWrap"
+                android:background="@drawable/selector_option_item"
+                android:clickable="true"
+                android:padding="@dimen/activity_vertical_margin">
+
+                <ImageView
+                    android:id="@+id/icon3"
+                    style="@style/WrapWrap"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/tg_news"/>
+
+                <LinearLayout
+                    style="@style/WrapWrap"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/width_6dp"
+                    android:layout_toRightOf="@+id/icon3"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/WrapAuto"
+                        android:gravity="center"
+                        android:padding="@dimen/width_3dp"
+                        android:text="推广消息"
+                        android:textColor="@color/common_h1"
+                        android:textSize="@dimen/textsize_16sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_tg_news"
+                        style="@style/WrapAuto"
+                        android:gravity="center"
+                        android:padding="@dimen/width_3dp"
+                        android:text="您暂无推广消息"
+                        android:textColor="@color/common_h2"
+                        android:textSize="@dimen/textsize_12sp"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_tg_time"
+                    style="@style/WrapWrap"
+                    android:layout_alignParentRight="true"
+                    android:text="2017-10-25 16:19:22"
+                    android:textColor="@color/common_h2"
+                    android:textSize="@dimen/sp_12"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </com.szinternet.crm.view.ReboundScrollView>
+</LinearLayout>

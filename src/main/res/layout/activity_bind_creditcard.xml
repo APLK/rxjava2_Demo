@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    style="@style/MatchMatch"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/common_gray_bg"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/toolbar"/>
+
+    <ScrollView
+        style="@style/MatchMatch"
+        android:scrollbars="none">
+
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/height_12dp"
+                android:background="@color/grey_e0e0e0"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/width_45dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/width_20dp"
+                android:paddingRight="@dimen/width_20dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="姓      名"
+                    android:textColor="@color/gray_323232"
+                    android:textSize="15sp"
+                    />
+
+                <EditText
+                    android:id="@+id/et_real_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/height_15dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="请输入姓名"
+                    android:inputType="text"
+                    android:textColor="@color/gray_676767"
+                    android:textColorHint="@color/text_color_hint"
+                    android:textCursorDrawable="@null"
+                    android:textSize="15sp"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/grey_e0e0e0"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/width_45dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/width_20dp"
+                android:paddingRight="@dimen/width_20dp"
+                >
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="卡      号"
+                    android:textColor="@color/gray_323232"
+
+                    android:textSize="15sp"/>
+
+                <com.szinternet.crm.view.ClearEditText
+                    android:id="@+id/et_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/height_15dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="请输入本人信用卡号"
+                    android:inputType="number"
+                    android:textColor="@color/gray_676767"
+                    android:textColorHint="@color/text_color_hint"
+                    android:textCursorDrawable="@null"
+                    android:textSize="15sp"/>
+
+                <ImageView
+                    android:id="@+id/iv_delete_card"
+                    android:layout_width="@dimen/width_30dp"
+                    android:layout_height="@dimen/width_30dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/btn_delete"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/grey_e0e0e0"/>
+
+            <TextView
+                android:id="@+id/tv_bank_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:drawableLeft="@mipmap/icon_jianshe"
+                android:drawablePadding="@dimen/width_10dp"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/width_12dp"
+                android:paddingLeft="@dimen/width_20dp"
+                android:paddingRight="@dimen/width_20dp"
+                android:paddingTop="@dimen/width_12dp"
+                android:text="default"
+                android:textSize="@dimen/textsize_13sp"
+                android:visibility="gone"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/height_12dp"
+                android:background="@color/grey_e0e0e0"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/width_45dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/width_20dp"
+                android:paddingRight="@dimen/width_20dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="CVN2"
+                    android:textColor="@color/gray_323232"
+                    android:textSize="15sp"
+
+                    />
+
+                <com.szinternet.crm.view.ClearEditText
+                    android:id="@+id/et_CVN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/height_15dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="请输入卡背后三位数字"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:textColor="@color/gray_676767"
+                    android:textColorHint="@color/text_color_hint"
+                    android:textCursorDrawable="@null"
+                    android:textSize="15sp"/>
+
+                <ImageView
+                    android:id="@+id/iv_delete_CVN"
+                    android:layout_width="@dimen/width_30dp"
+                    android:layout_height="@dimen/width_30dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/btn_delete"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/grey_e0e0e0"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/width_45dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/width_20dp"
+                android:paddingRight="@dimen/width_20dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="有效期"
+                    android:textColor="@color/gray_323232"
+                    android:textSize="15sp"
+
+                    />
+
+                <com.szinternet.crm.view.ClearEditText
+                    android:id="@+id/et_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/height_15dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="例如11/16就填1116"
+                    android:inputType="datetime"
+                    android:textColor="@color/gray_676767"
+                    android:textColorHint="@color/text_color_hint"
+                    android:textCursorDrawable="@null"
+                    android:textSize="15sp"/>
+
+                <ImageView
+                    android:id="@+id/iv_delete_time"
+                    android:layout_width="@dimen/width_30dp"
+                    android:layout_height="@dimen/width_30dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/btn_delete"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/repayment_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="@dimen/height_12dp"
+                    android:background="@color/grey_e0e0e0"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/width_45dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/width_20dp"
+                    android:paddingRight="@dimen/width_20dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="卡限额"
+                        android:textColor="@color/gray_323232"
+                        android:textSize="15sp"
+
+                        />
+
+                    <com.szinternet.crm.view.ClearEditText
+                        android:id="@+id/et_quota"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/height_15dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="信用卡的额度"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/gray_676767"
+                        android:textColorHint="@color/text_color_hint"
+                        android:textCursorDrawable="@null"
+                        android:textSize="15sp"/>
+
+                    <ImageView
+                        android:id="@+id/iv_delete_quota"
+                        android:layout_width="@dimen/width_30dp"
+                        android:layout_height="@dimen/width_30dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@mipmap/btn_delete"
+                        android:visibility="gone"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/grey_e0e0e0"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/width_45dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/width_20dp"
+                    android:paddingRight="@dimen/width_20dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="账单日"
+                        android:textColor="@color/gray_323232"
+                        android:textSize="15sp"
+
+                        />
+
+                    <com.szinternet.crm.view.ClearEditText
+                        android:id="@+id/et_statement_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/height_15dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="例如:10"
+                        android:inputType="datetime"
+                        android:maxLength="2"
+                        android:textColor="@color/gray_676767"
+                        android:textColorHint="@color/text_color_hint"
+                        android:textCursorDrawable="@null"
+                        android:textSize="15sp"/>
+
+                    <ImageView
+                        android:id="@+id/iv_delete_statement_date"
+                        android:layout_width="@dimen/width_30dp"
+                        android:layout_height="@dimen/width_30dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@mipmap/btn_delete"
+                        android:visibility="gone"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/grey_e0e0e0"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/width_45dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/width_20dp"
+                    android:paddingRight="@dimen/width_20dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="最后还款日"
+                        android:textColor="@color/gray_323232"
+                        android:textSize="15sp"
+
+                        />
+
+                    <com.szinternet.crm.view.ClearEditText
+                        android:id="@+id/et_repayment_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/height_15dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="例如:30"
+                        android:inputType="datetime"
+                        android:maxLength="2"
+                        android:textColor="@color/gray_676767"
+                        android:textColorHint="@color/text_color_hint"
+                        android:textCursorDrawable="@null"
+                        android:textSize="15sp"/>
+
+                    <ImageView
+                        android:id="@+id/iv_delete_repayment_date"
+                        android:layout_width="@dimen/width_30dp"
+                        android:layout_height="@dimen/width_30dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@mipmap/btn_delete"
+                        android:visibility="gone"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/height_12dp"
+                android:background="@color/grey_e0e0e0"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/width_45dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/width_20dp"
+                android:paddingRight="@dimen/width_20dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="预留手机"
+                    android:textColor="@color/gray_323232"
+                    android:textSize="15sp"
+                    />
+
+                <com.szinternet.crm.view.TelEditText
+                    android:id="@+id/et_phonenum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/height_15dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="请输入预留手机号"
+                    android:inputType="number"
+                    android:maxLength="13"
+                    android:textColor="@color/gray_676767"
+                    android:textColorHint="@color/text_color_hint"
+                    android:textCursorDrawable="@null"
+                    android:textSize="15sp"/>
+
+                <ImageView
+                    android:id="@+id/iv_delete_account"
+                    android:layout_width="@dimen/width_30dp"
+                    android:layout_height="@dimen/width_30dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/btn_delete"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/grey_e0e0e0"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/width_45dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/width_20dp"
+                android:paddingRight="@dimen/width_20dp"
+                >
+
+                <TextView
+                    style="@style/WrapMatch"
+                    android:gravity="center_vertical"
+                    android:text="验证码"
+                    android:textColor="@color/gray_323232"
+                    android:textSize="@dimen/textsize_15sp"
+
+                    />
+
+                <EditText
+                    android:id="@+id/et_bind_ver"
+                    style="@style/AutoMatch"
+                    android:layout_marginLeft="@dimen/width_25dp"
+                    android:background="@null"
+                    android:hint="请输入短信验证码"
+                    android:inputType="text"
+                    android:maxLength="8"
+                    android:textColor="@color/gray_676767"
+                    android:textColorHint="@color/text_color_hint"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/textsize_15sp"/>
+
+                <TextView
+                    android:id="@+id/tv_get_ver"
+                    style="@style/WrapMatch"
+                    android:gravity="center_vertical"
+                    android:text="@string/get_ver"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/textsize_18sp"
+
+                    />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bt_next"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/width_45dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/height_30dp"
+                android:layout_marginLeft="@dimen/width_20dp"
+                android:layout_marginRight="@dimen/width_20dp"
+                android:layout_marginTop="@dimen/height_40dp"
+                android:background="@drawable/selector_btn_login"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="#ffffff"
+                android:textSize="18sp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

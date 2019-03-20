@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                style="@style/MatchWrap"
+                android:layout_marginTop="@dimen/width_12dp"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/width_8dp"
+                android:paddingLeft="@dimen/width_12dp"
+                android:paddingRight="@dimen/width_12dp"
+                android:paddingTop="@dimen/width_8dp">
+
+    <TextView
+        android:id="@+id/tv_card"
+        style="@style/WrapWrap"
+        android:text="储蓄卡(尾号5699)"
+        android:textColor="@color/common_h1"
+        android:textSize="@dimen/textsize_16sp"/>
+
+    <TextView
+        android:id="@+id/tv_unbind_card"
+        style="@style/WrapWrap"
+        android:layout_alignParentRight="true"
+        android:text="解除绑定"
+        android:textColor="@color/red"
+        android:textSize="@dimen/textsize_16sp"/>
+</RelativeLayout>

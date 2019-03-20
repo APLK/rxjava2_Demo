@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/MatchMatch"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:background="@color/common_gray_bg"
+              android:orientation="vertical">
+
+    <include layout="@layout/toolbar"/>
+
+    <LinearLayout
+        style="@style/MatchWrap"
+        android:layout_marginTop="@dimen/height_12dp"
+        android:background="@color/white"
+        android:padding="@dimen/height_12dp">
+
+        <ImageView
+            style="@style/AutoWrap"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/upgrade_pay"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_money"
+                style="@style/MatchWrap"
+                android:paddingBottom="@dimen/height_5dp"
+                android:paddingTop="@dimen/height_5dp"
+                android:text="¥2980.00"
+                android:textColor="@color/viewfinder_frame"
+                android:textSize="25sp"/>
+
+            <TextView
+                android:id="@+id/tv_order_number"
+                style="@style/MatchWrap"
+                android:layout_marginTop="@dimen/height_5dp"
+                android:text="订单编号:xxx"
+                android:textColor="@color/common_h2"/>
+
+            <TextView
+                android:id="@+id/tv_order_nname"
+                style="@style/MatchWrap"
+                android:layout_marginTop="@dimen/height_5dp"
+                android:text="商品名称:升级xxx"
+                android:textColor="@color/common_h2"/>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/fast_view"
+        style="@style/MatchWrap"
+        android:layout_marginTop="@dimen/width_20dp"
+        android:background="@color/white"
+        android:padding="@dimen/height_12dp">
+
+        <ImageView
+            android:id="@+id/icon"
+            style="@style/WrapWrap"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_fast"/>
+
+        <LinearLayout
+            style="@style/WrapWrap"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/width_10dp"
+            android:layout_toRightOf="@+id/icon"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/WrapAuto"
+                android:text="快捷支付"
+                android:textColor="@color/common_h1"
+                android:textSize="@dimen/sp_16"/>
+
+            <TextView
+                android:layout_marginTop="@dimen/width_3dp"
+                style="@style/WrapAuto"
+                android:text="银行卡信用卡储蓄卡付款,无需开通网银"
+                android:textColor="@color/common_h2"
+                android:textSize="@dimen/sp_12"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/cb_fast"
+            android:layout_width="@dimen/width_20dp"
+            android:layout_height="@dimen/width_20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/selector_checkbox_pay"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/wx_view"
+        style="@style/MatchWrap"
+        android:layout_marginTop="@dimen/width_20dp"
+        android:background="@color/white"
+        android:padding="@dimen/height_12dp">
+
+        <ImageView
+            android:id="@+id/icon2"
+            style="@style/WrapWrap"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_wx"/>
+
+        <LinearLayout
+            style="@style/WrapWrap"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/width_10dp"
+            android:layout_toRightOf="@+id/icon2"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/WrapAuto"
+                android:text="微信支付"
+                android:textColor="@color/common_h1"
+                android:textSize="@dimen/sp_16"/>
+
+            <TextView
+                android:layout_marginTop="@dimen/width_3dp"
+                style="@style/WrapAuto"
+                android:text="推荐安装微信6.0及以上版本的用户使用"
+                android:textColor="@color/common_h2"
+                android:textSize="@dimen/sp_12"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/cb_wx"
+            android:layout_width="@dimen/width_20dp"
+            android:layout_height="@dimen/width_20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/selector_checkbox_pay"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/zfb_view"
+        style="@style/MatchWrap"
+        android:layout_marginTop="@dimen/width_12dp"
+        android:background="@color/white"
+        android:padding="@dimen/height_12dp">
+
+        <ImageView
+            android:id="@+id/icon1"
+            style="@style/WrapWrap"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_zfb"/>
+
+        <LinearLayout
+            style="@style/WrapWrap"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/width_10dp"
+            android:layout_toRightOf="@+id/icon1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/WrapAuto"
+                android:text="支付宝支付"
+                android:textColor="@color/common_h1"
+                android:textSize="@dimen/sp_16"/>
+
+            <TextView
+                android:layout_marginTop="@dimen/width_3dp"
+                style="@style/WrapAuto"
+                android:text="推荐有支付宝账号的用户使用"
+                android:textColor="@color/common_h2"
+                android:textSize="@dimen/sp_12"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/cb_zfb"
+            android:layout_width="@dimen/width_20dp"
+            android:layout_height="@dimen/width_20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/selector_checkbox_pay"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bt_pay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_50dp"
+        android:layout_marginLeft="@dimen/width_20dp"
+        android:layout_marginRight="@dimen/width_20dp"
+        android:layout_marginTop="@dimen/height_40dp"
+        android:background="@color/yellow"
+        android:text="确认支付  ¥2980.00"
+        android:textColor="@color/white"/>
+
+</LinearLayout>

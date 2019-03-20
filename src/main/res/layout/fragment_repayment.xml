@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/MatchMatch"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:background="@color/bg_gray"
+              android:orientation="vertical">
+
+    <include layout="@layout/toolbar"/>
+
+    <ScrollView
+        style="@style/MatchMatch"
+        android:scrollbars="none">
+
+        <LinearLayout
+            style="@style/MatchMatch"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                style="@style/MatchWrap"
+                android:background="@color/white"
+                android:padding="@dimen/height_10dp">
+
+                <TextView
+                    style="@style/WrapWrap"
+                    android:drawableLeft="@mipmap/icon_card_manage"
+                    android:drawablePadding="@dimen/width_10dp"
+                    android:gravity="center"
+                    android:text="信用卡管理"
+                    android:textColor="@color/common_h1"
+                    android:textSize="@dimen/sp_16"/>
+
+                <TextView
+                    android:id="@+id/add_card"
+                    style="@style/WrapWrap"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="@dimen/width_10dp"
+                    android:drawableRight="@mipmap/add_card"
+                    android:gravity="center"
+                    android:text="信用卡管理"
+                    android:textColor="@color/common_h2"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/empty_card"
+                style="@style/WrapWrap"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/height_30dp"
+                android:drawablePadding="@dimen/height_25dp"
+                android:drawableTop="@mipmap/icon_add_card"
+                android:gravity="center"
+                android:text="请添加信用卡进行支付"/>
+
+            <LinearLayout
+                android:id="@+id/card_view"
+                style="@style/MatchWrap"
+                android:orientation="vertical">
+            </LinearLayout>
+
+            <RelativeLayout
+                style="@style/MatchWrap"
+                android:layout_marginTop="@dimen/height_30dp"
+                android:background="@color/white"
+                android:padding="@dimen/height_10dp">
+
+                <TextView
+                    style="@style/WrapWrap"
+                    android:drawableLeft="@mipmap/icon_card_manage"
+                    android:drawablePadding="@dimen/width_10dp"
+                    android:gravity="center"
+                    android:text="还款计划"
+                    android:textColor="@color/common_h1"
+                    android:textSize="@dimen/sp_16"/>
+
+                <TextView
+                    android:id="@+id/more_plan"
+                    style="@style/WrapWrap"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="@dimen/width_5dp"
+                    android:drawableRight="@mipmap/icon_enter"
+                    android:gravity="center"
+                    android:text="更多计划"
+                    android:textColor="@color/common_h2"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/plan_view"
+                style="@style/MatchWrap"
+                android:layout_marginBottom="@dimen/height_30dp"
+                android:orientation="vertical">
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/no_plan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/height_30dp"
+                android:layout_marginTop="@dimen/height_30dp"
+                android:drawablePadding="@dimen/height_15dp"
+                android:drawableTop="@mipmap/icon_repayment_plan"
+                android:gravity="center"
+                android:text="暂无还款计划"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+    <!-- <RadioGroup
+         android:id="@+id/group"
+         android:layout_width="match_parent"
+         android:layout_height="@dimen/width_45dp"
+         android:layout_gravity="bottom|center"
+         android:layout_marginLeft="@dimen/width_20dp"
+         android:layout_marginRight="@dimen/width_20dp"
+         android:layout_marginTop="@dimen/height_15dp"
+         android:gravity="bottom|center"
+         android:orientation="horizontal">
+
+         <RadioButton
+             android:id="@+id/foot_bar_near"
+             style="@style/main_footer_bar_radio"
+             android:background="@drawable/main_card_credit"
+             android:checked="true"
+             android:text="我的信用卡"
+             android:textColor="@drawable/text_color"
+             android:textSize="14.0dip"/>
+
+         <RadioButton
+             android:id="@+id/foot_bar_my"
+             style="@style/main_footer_bar_radio"
+             android:background="@drawable/main_card_savings"
+             android:text="我的储蓄卡"
+             android:textColor="@drawable/text_color"
+             android:textSize="@dimen/textsize_14sp"/>
+     </RadioGroup>-->
+
+</LinearLayout>

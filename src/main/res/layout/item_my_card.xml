@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/MatchWrap"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/MatchWrap"
+        android:layout_marginLeft="@dimen/width_12dp"
+        android:layout_marginRight="@dimen/width_12dp"
+        android:layout_marginTop="@dimen/width_12dp"
+        android:background="@drawable/shape_card_bg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            style="@style/MatchWrap"
+            android:background="@drawable/shape_top_card_bg"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/height_5dp"
+            android:paddingLeft="@dimen/width_12dp"
+            android:paddingRight="@dimen/width_12dp"
+            android:paddingTop="@dimen/height_5dp">
+
+            <TextView
+                android:id="@+id/tv_bank_name"
+                style="@style/WrapWrap"
+                android:layout_alignParentLeft="true"
+                android:text="default(尾号default)"
+                android:textColor="@color/white"/>
+
+            <ImageView
+                style="@style/WrapWrap"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/icon_enter"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/MatchWrap"
+            android:background="@drawable/shape_card_bg"
+            android:paddingBottom="@dimen/height_10dp"
+            android:paddingLeft="@dimen/width_12dp"
+            android:paddingRight="@dimen/width_12dp">
+
+            <LinearLayout
+                android:id="@+id/name_view"
+                style="@style/MatchWrap"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/width_10dp"
+                android:paddingTop="@dimen/width_10dp">
+
+                <TextView
+                    android:id="@+id/name"
+                    style="@style/WrapWrap"
+                    android:gravity="center_vertical"
+                    android:text="@string/card_admin"
+                    android:textColor="@color/common_h1"/>
+
+                <TextView
+                    android:id="@+id/icon_state"
+                    style="@style/WrapWrap"
+                    android:layout_marginLeft="@dimen/width_20dp"
+                    android:background="@drawable/selector_rect_repayment_bg"
+                    android:gravity="center"
+                    android:text="待还款"
+                    android:textColor="@drawable/selector_repayment_text_color"
+                    android:textSize="@dimen/sp_12"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/line"
+                style="@style/MatchOne"
+                android:layout_below="@+id/name_view"
+                android:layout_marginRight="@dimen/width_60dp"
+                android:background="@color/common_divider_narrow"/>
+
+            <LinearLayout
+                style="@style/MatchWrap"
+                android:layout_below="@+id/line"
+                android:layout_marginRight="@dimen/width_20dp"
+                android:layout_marginTop="@dimen/height_8dp"
+                android:layout_toLeftOf="@+id/repayment_state">
+
+                <TextView
+                    android:id="@+id/tv_limit"
+                    style="@style/AutoWrap"
+                    android:lineSpacingExtra="@dimen/height_4dp"
+                    android:text="@string/money_limit"
+                    android:textColor="@color/common_h1"
+                    android:textSize="@dimen/sp_12"/>
+
+                <TextView
+                    android:id="@+id/tv_repayment_day"
+                    style="@style/AutoWrap"
+                    android:lineSpacingExtra="@dimen/height_4dp"
+                    android:text="@string/repayment_day"
+                    android:textColor="@color/common_h1"
+                    android:textSize="@dimen/sp_12"/>
+
+                <TextView
+                    android:id="@+id/tv_last_repayment"
+                    style="@style/AutoWrap"
+                    android:lineSpacingExtra="@dimen/height_4dp"
+                    android:text="@string/last_repayment"
+                    android:textColor="@color/common_h1"
+                    android:textSize="@dimen/sp_12"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/repayment_state"
+                style="@style/WrapWrap"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/selector_repayment_bg"
+                android:gravity="center"
+                android:text="新增\n还款"
+                android:textColor="@drawable/selector_repayment_text_color"
+                android:textSize="@dimen/sp_12"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/MatchMatch"
+              android:background="@color/common_gray_bg"
+              android:orientation="vertical">
+
+    <include layout="@layout/toolbar"/>
+
+    <LinearLayout
+        style="@style/MatchWrap"
+        android:layout_margin="@dimen/width_12dp"
+        android:background="@drawable/shape_card_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_bank_name"
+            style="@style/MatchWrap"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/shape_top_card_bg"
+            android:paddingBottom="@dimen/height_5dp"
+            android:paddingLeft="@dimen/width_12dp"
+            android:paddingRight="@dimen/width_12dp"
+            android:paddingTop="@dimen/height_5dp"
+            android:text="default(尾号default)"
+            android:textColor="@color/white"/>
+
+
+        <TextView
+            android:id="@+id/name"
+            style="@style/MatchWrap"
+            android:paddingBottom="@dimen/height_10dp"
+            android:paddingLeft="@dimen/width_20dp"
+            android:paddingRight="@dimen/width_20dp"
+            android:paddingTop="@dimen/height_10dp"
+            android:text="@string/card_admin"
+            android:textColor="@color/common_h1"/>
+
+
+        <View
+            android:id="@+id/line"
+            style="@style/MatchOne"
+            android:layout_marginRight="@dimen/width_60dp"
+            android:background="@color/common_divider_narrow"
+            android:paddingLeft="@dimen/width_12dp"
+            android:paddingRight="@dimen/width_12dp"/>
+
+        <LinearLayout
+            style="@style/MatchWrap"
+            android:paddingBottom="@dimen/height_15dp"
+            android:paddingLeft="@dimen/width_20dp"
+            android:paddingRight="@dimen/width_20dp"
+            android:paddingTop="@dimen/height_15dp">
+
+            <TextView
+                android:id="@+id/tv_limit"
+                style="@style/AutoWrap"
+                android:lineSpacingExtra="@dimen/width_8dp"
+                android:text="@string/money_limit"
+                android:textColor="@color/common_h1"
+                android:textSize="@dimen/sp_14"/>
+
+            <TextView
+                android:id="@+id/tv_repayment_day"
+                style="@style/AutoWrap"
+                android:lineSpacingExtra="@dimen/width_8dp"
+                android:text="@string/repayment_day"
+                android:textColor="@color/common_h1"
+                android:textSize="@dimen/sp_14"/>
+
+            <TextView
+                android:id="@+id/tv_last_repayment"
+                style="@style/AutoWrap"
+                android:lineSpacingExtra="@dimen/width_8dp"
+                android:text="@string/last_repayment"
+                android:textColor="@color/common_h1"
+                android:textSize="@dimen/sp_14"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/MatchWrap"
+        android:layout_marginTop="@dimen/height_15dp"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/height_10dp"
+        android:paddingTop="@dimen/height_10dp">
+
+        <TextView
+            android:id="@+id/tv_repayment_info"
+            style="@style/AutoWrap"
+            android:drawablePadding="@dimen/height_5dp"
+            android:drawableTop="@mipmap/icon_repayment"
+            android:gravity="center"
+            android:text="还款信息"
+            android:textColor="@color/common_h1"
+            android:textSize="@dimen/textsize_16sp"/>
+
+        <TextView
+            android:id="@+id/tv_edit_info"
+            style="@style/AutoWrap"
+            android:drawablePadding="@dimen/height_5dp"
+            android:drawableTop="@mipmap/icon_edit_info"
+            android:gravity="center"
+            android:text="修改信息"
+            android:textColor="@color/common_h1"
+            android:textSize="@dimen/textsize_16sp"/>
+
+        <TextView
+            android:id="@+id/tv_unbind_card"
+            style="@style/AutoWrap"
+            android:drawablePadding="@dimen/height_5dp"
+            android:drawableTop="@mipmap/icon_unbind_card"
+            android:gravity="center"
+            android:text="解绑卡片"
+            android:textColor="@color/common_h1"
+            android:textSize="@dimen/textsize_16sp"/>
+    </LinearLayout>
+</LinearLayout>

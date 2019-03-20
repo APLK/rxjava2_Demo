@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/MatchMatch"
+              android:background="@color/common_gray_bg"
+              android:orientation="vertical">
+
+    <include layout="@layout/toolbar"/>
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/MatchWrap"
+        android:layout_marginTop="@dimen/height_10dp"
+        android:paddingLeft="@dimen/width_15dp"
+        android:paddingRight="@dimen/width_15dp"
+        android:text="刷卡"
+        android:textColor="@color/common_h1"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/time"
+        style="@style/MatchWrap"
+        android:layout_marginTop="@dimen/height_10dp"
+        android:paddingLeft="@dimen/width_15dp"
+        android:paddingRight="@dimen/width_15dp"
+        android:text="2017-10-25 16:19:22"
+        android:textColor="@color/common_h2"
+        android:textSize="14sp"/>
+
+    <TextView
+
+        android:id="@+id/content"
+        style="@style/MatchWrap"
+        android:layout_marginTop="@dimen/height_10dp"
+        android:paddingLeft="@dimen/width_15dp"
+        android:paddingRight="@dimen/width_15dp"
+        android:text="24小时秒到"
+        android:textColor="@color/common_h1"
+        android:textSize="20sp"/>
+</LinearLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/MatchMatch"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:background="@color/common_gray_bg"
+              android:orientation="vertical">
+
+    <include layout="@layout/toolbar"/>
+
+    <ScrollView
+        style="@style/MatchMatch"
+        android:scrollbars="none">
+
+        <LinearLayout
+            style="@style/MatchMatch"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                style="@style/MatchWrap"
+                android:layout_marginLeft="@dimen/width_15dp"
+                android:layout_marginRight="@dimen/width_15dp"
+                android:layout_marginTop="@dimen/height_20dp"
+                android:background="@drawable/shape_bt_bg">
+
+                <ImageView
+                    android:id="@+id/repayment"
+                    android:layout_width="@dimen/height_40dp"
+                    android:layout_height="@dimen/height_40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/repayment"/>
+
+                <LinearLayout
+                    style="@style/WrapWrap"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/width_12dp"
+                    android:layout_toRightOf="@+id/repayment"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/WrapWrap"
+                        android:layout_marginTop="@dimen/height_5dp"
+                        android:paddingLeft="@dimen/width_12dp"
+                        android:paddingRight="@dimen/width_12dp"
+                        android:text="信用卡代还"
+                        android:textColor="@color/common_h1"
+                        android:textSize="@dimen/textsize_14sp"/>
+
+                    <TextView
+                        android:id="@+id/repayment_rate"
+                        style="@style/WrapWrap"
+                        android:layout_marginTop="@dimen/height_15dp"
+                        android:paddingLeft="@dimen/width_12dp"
+                        android:paddingRight="@dimen/width_12dp"
+                        android:text="@string/update_collect_rate"
+                        android:textColor="@color/reader_menu_bg_color"
+                        android:textSize="20sp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/MatchWrap"
+                android:layout_marginLeft="@dimen/width_15dp"
+                android:layout_marginRight="@dimen/width_15dp"
+                android:layout_marginTop="@dimen/height_20dp"
+                android:background="@drawable/shape_bt_bg">
+
+                <ImageView
+                    android:id="@+id/collect_money"
+                    android:layout_width="@dimen/height_40dp"
+                    android:layout_height="@dimen/height_40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/collect_money"/>
+
+                <LinearLayout
+                    style="@style/WrapWrap"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/width_12dp"
+                    android:layout_toRightOf="@+id/collect_money"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/WrapWrap"
+                        android:layout_marginTop="@dimen/height_5dp"
+                        android:paddingLeft="@dimen/width_12dp"
+                        android:paddingRight="@dimen/width_12dp"
+                        android:text="信用卡收款"
+                        android:textColor="@color/common_h1"
+                        android:textSize="@dimen/textsize_14sp"/>
+
+                    <TextView
+                        android:id="@+id/collect_money_rate"
+                        style="@style/WrapWrap"
+                        android:layout_marginTop="@dimen/height_15dp"
+                        android:paddingLeft="@dimen/width_12dp"
+                        android:paddingRight="@dimen/width_12dp"
+                        android:text="@string/update_repayment_rate"
+                        android:textColor="@color/reader_menu_bg_color"
+                        android:textSize="20sp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                style="@style/MatchWrap"
+                android:gravity="center"
+                android:padding="@dimen/height_20dp"
+                android:text="会员权益"
+                android:textColor="@color/read_theme_night"
+                android:textSize="@dimen/textsize_18sp"/>
+
+            <TextView
+                android:id="@+id/content"
+                style="@style/MatchWrap"
+                android:lineSpacingExtra="@dimen/height_5dp"
+                android:paddingTop="@dimen/height_12dp"
+                android:paddingBottom="@dimen/width_12dp"
+                android:paddingLeft="@dimen/width_20dp"
+                android:paddingRight="@dimen/width_20dp"
+                android:text="1.享受xxx\n2.享受xxx"
+                android:textColor="@color/common_h2"
+                android:textSize="@dimen/textsize_14sp"/>
+
+            <Button
+                android:id="@+id/bt_update"
+                style="@style/MatchWrap"
+                android:layout_marginBottom="@dimen/height_30dp"
+                android:layout_marginLeft="@dimen/width_20dp"
+                android:layout_marginRight="@dimen/width_20dp"
+                android:layout_marginTop="@dimen/height_12dp"
+                android:background="@color/toolbar"
+                android:textSize="@dimen/textsize_20sp"
+                android:text="@string/update_btn_content"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

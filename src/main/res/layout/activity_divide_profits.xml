@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/MatchMatch"
+              android:background="@color/common_gray_bg"
+              android:orientation="vertical">
+
+    <include layout="@layout/toolbar"/>
+
+    <LinearLayout
+        style="@style/MatchWrap"
+        android:layout_marginLeft="@dimen/width_50dp"
+        android:layout_marginRight="@dimen/width_50dp"
+        android:layout_marginTop="@dimen/height_12dp">
+
+        <Button
+            android:id="@+id/repayment_profit"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/width_35dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_whiteblue_bg"
+            android:gravity="center"
+            android:text="还款分润"
+            android:textColor="@drawable/select_w_blue_color"/>
+
+        <Button
+            android:id="@+id/collect_profit"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/width_35dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_whiteblue_bg"
+            android:gravity="center"
+            android:text="收益分润"
+            android:textColor="@drawable/select_w_blue_color"/>
+
+    </LinearLayout>
+
+    <com.szinternet.crm.view.NoScrollViewPager
+        android:id="@+id/pager"
+        style="@style/MatchMatch"
+        android:layout_marginTop="@dimen/height_12dp"/>
+</LinearLayout>

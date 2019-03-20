@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TextView
+    android:id="@+id/bank"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchWrap"
+    android:background="@drawable/selector_option_item"
+    android:drawableLeft="@mipmap/icon_jianshe"
+    android:drawablePadding="@dimen/width_8dp"
+    android:gravity="center_vertical"
+    android:padding="@dimen/width_10dp"
+    android:text="中国建设银行(8888)"
+    android:textColor="@color/common_h1">
+</TextView>

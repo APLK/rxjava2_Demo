@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/MatchMatch"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:background="@color/common_gray_bg"
+              android:orientation="vertical">
+
+    <include layout="@layout/toolbar"/>
+
+    <LinearLayout
+        style="@style/MatchWrap"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/height_25dp">
+
+        <TextView
+            style="@style/MatchWrap"
+            android:gravity="center"
+            android:text="支付金额"
+            android:textColor="@color/common_h1"
+            android:textSize="@dimen/textsize_15sp"/>
+
+        <TextView
+            android:id="@+id/tv_money"
+            style="@style/MatchWrap"
+            android:layout_marginTop="@dimen/height_8dp"
+            android:gravity="center"
+            android:text="¥ 0.00"
+            android:textColor="@color/common_h1"
+            android:textSize="30sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/width_45dp"
+        android:layout_marginTop="@dimen/height_15dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/width_20dp"
+        android:paddingRight="@dimen/width_20dp"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="持卡人"
+            android:textColor="@color/common_h1"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center_vertical"
+            android:text="default"
+            android:textColor="@color/common_h1"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/grey_e0e0e0"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/width_45dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/width_20dp"
+        android:paddingRight="@dimen/width_20dp"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="付款卡号"
+            android:textColor="@color/common_h1"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_card_code"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:drawableLeft="@mipmap/icon_jianshe"
+            android:drawablePadding="@dimen/width_10dp"
+            android:gravity="center_vertical"
+            android:text="default"
+            android:textColor="@color/common_h1"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/width_45dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/width_20dp"
+        android:paddingRight="@dimen/width_20dp"
+        >
+
+        <TextView
+            style="@style/WrapMatch"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="验证码"
+            android:textColor="@color/common_h1"
+            android:textSize="@dimen/textsize_15sp"
+
+            />
+
+        <EditText
+            android:id="@+id/et_bind_ver"
+            style="@style/AutoMatch"
+            android:layout_weight="4"
+            android:background="@null"
+            android:hint="请输入短信验证码"
+            android:inputType="text"
+            android:maxLength="8"
+            android:textColor="@color/gray_676767"
+            android:textColorHint="@color/text_color_hint"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/textsize_15sp"/>
+
+        <TextView
+            android:id="@+id/tv_get_ver"
+            style="@style/WrapMatch"
+            android:gravity="center_vertical"
+            android:text="@string/get_ver"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/textsize_18sp"
+
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_sure"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/width_45dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/width_20dp"
+        android:layout_marginRight="@dimen/width_20dp"
+        android:layout_marginTop="@dimen/height_40dp"
+        android:background="@drawable/selector_btn_login"
+        android:gravity="center"
+        android:text="确认支付"
+        android:textColor="#ffffff"
+        android:textSize="18sp"/>
+</LinearLayout>

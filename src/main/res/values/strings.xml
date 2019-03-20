@@ -1,0 +1,55 @@
+<resources>
+    <!--小卡宝 中科云APP 大王卡-->
+    <string name="app_name">养宝卡</string>
+    <!--退出应用-->
+    <string name="cancel">取消</string>
+    <string name="confirm">确认</string>
+    <string name="login">登录</string>
+    <string name="register">立即注册</string>
+    <string name="get_ver">获取验证码</string>
+    <string name="update_pwd">确认修改</string>
+    <string name="alert_exit_title">退出登录</string>
+    <string name="alert_exit_content">确定要退出本应用吗?\n</string>
+    <string name="exit_tip">再按一次退出程序</string>
+    <string name="permissions_denied">权限被拒绝了,请在系统设置中开启!</string>
+    <string name="write_permissions_denied">下载新版本app需要读写权限,请在系统设置中开启!</string>
+    <string name="no_net">您已进入了没有网络的异次元</string>
+    <string name="service_error">服务器异常</string>
+    <string name="service_timeout">请求超时，请重试</string>
+
+    <!--底部菜单-->
+    <string name="card">还卡</string>
+    <string name="profit">收益</string>
+    <string name="mine">我的</string>
+    <string name="home">首页</string>
+    <string name="my_share">推广</string>
+
+    <!--我的首页-->
+    <string name="main_collect_money">信用卡收款</string>
+    <string name="main_repayment">信用卡还款</string>
+    <!--账单详情-->
+    <string name="billing_record">账单详情</string>
+    <string name="repayment">还卡</string>
+    <string name="my_profit">我的收益</string>
+    <string name="code_generate">二维码图片</string>
+    <string name="about_content">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;此手机app应用是建立在手机完成付款的基础上,不用带卡,即可完成全额账单的还款操作智能还款,实时美化账单.专为中国六亿信用卡用户量身打造的信用卡智能帮还管理软件.它具有快捷收款、智能帮还、信用卡申请三个核心功能.其中的智能帮还功能可以最大限度帮助还款人节省还款成本,以最少的资金达到全额还款.为广大信用卡用户带来最先进的账单解决方案和完美的用户体验.真正做到让您放心刷卡、还款无忧.科技推动进步,创新改变生活.独家首创"大众创业金融服务"的推广及盈利模式,通过移动互联网让每个人都能参与互联网</string>
+
+    <string name="my_rate">费率%1$s.立即到账</string>
+    <string name="update_rate">升级%1$s立享%2$s费率</string>
+    <string name="rate">还款费率%1$s收款费率%2$s</string>
+    <string name="my_grade">我的等级:%1$s</string>
+    <string name="update_repayment_rate">还款费率%1$s</string>
+    <string name="update_collect_rate">收款费率%1$s</string>
+    <string name="update_btn_content">升级%1$s¥%2$s</string>
+    <string name="card_admin">持卡人: %1$s</string>
+    <string name="money_limit">%1$s\n额度</string>
+    <string name="repayment_day">%1$s日\n账单日</string>
+    <string name="last_repayment">%1$s日\n最后还款日</string>
+
+    <string name="plan_time">计划日期: %1$s</string>
+    <string name="plan_money">%1$s\n还款额度</string>
+    <string name="plan_count">%1$s笔\n还款笔数</string>
+    <string name="plan_server">%1$s\n手续费</string>
+    <string name="introduce_count"><Data><![CDATA[推荐好友<font color="#fa3535"><b>%1$d</b></font>位]]></Data></string>
+
+</resources>

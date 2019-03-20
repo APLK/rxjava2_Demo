@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/MatchMatch"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:background="@color/toolbar"
+              android:orientation="vertical">
+
+    <include layout="@layout/toolbar"/>
+
+    <ScrollView
+        style="@style/MatchMatch"
+        android:scrollbars="none">
+
+        <LinearLayout
+            style="@style/MatchMatch"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_img"
+                style="@style/WrapWrap"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/height_10dp"
+                android:background="@mipmap/user_grade_1"
+                android:paddingBottom="@dimen/width_6dp"
+                android:paddingLeft="@dimen/width_6dp"
+                android:paddingRight="@dimen/width_6dp"
+                android:paddingTop="@dimen/width_25dp"
+                android:src="@mipmap/user_grade_img"/>
+
+            <TextView
+                style="@style/WrapWrap"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/height_10dp"
+                android:text="我的等级: 商户"
+                android:textColor="@color/white"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/upgrade"
+                style="@style/WrapWrap"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/height_15dp"
+                android:background="@drawable/selector_upgrade"
+                android:gravity="center"
+                android:text="立即升级"
+                android:textColor="@color/toolbar"
+                android:textSize="@dimen/textsize_18sp"/>
+
+            <TextView
+                style="@style/WrapWrap"
+                android:layout_marginLeft="@dimen/width_35dp"
+                android:layout_marginRight="@dimen/width_35dp"
+                android:layout_marginTop="@dimen/height_40dp"
+                android:drawableLeft="@mipmap/icon_light"
+                android:drawablePadding="@dimen/width_10dp"
+                android:gravity="center"
+                android:text="推广该应用可获得分润 和推广收益"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_16"/>
+
+            <TextView
+                style="@style/WrapWrap"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/width_35dp"
+                android:layout_marginRight="@dimen/width_35dp"
+                android:layout_marginTop="@dimen/height_15dp"
+                android:gravity="center"
+                android:text="--    三种推广方式    --"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_14"/>
+
+            <RelativeLayout
+                android:id="@+id/share1"
+                style="@style/MatchWrap"
+                android:layout_marginLeft="@dimen/width_15dp"
+                android:layout_marginRight="@dimen/width_15dp"
+                android:layout_marginTop="@dimen/height_20dp"
+                android:background="@drawable/shape_bt_bg">
+
+                <LinearLayout
+                    style="@style/WrapWrap"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/WrapWrap"
+                        android:paddingLeft="@dimen/width_12dp"
+                        android:paddingRight="@dimen/width_12dp"
+                        android:text="二维码图片"
+                        android:textColor="@color/reader_menu_bg_color"
+                        android:textSize="16sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        style="@style/WrapWrap"
+                        android:layout_marginTop="@dimen/height_5dp"
+                        android:paddingLeft="@dimen/width_12dp"
+                        android:paddingRight="@dimen/width_12dp"
+                        android:text="通过设计好的图片携带个人二维码推广"
+                        android:textSize="@dimen/textsize_12sp"/>
+                </LinearLayout>
+
+
+                <ImageView
+                    style="@style/WrapWrap"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/promotion1"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/share2"
+                style="@style/MatchWrap"
+                android:layout_marginLeft="@dimen/width_15dp"
+                android:layout_marginRight="@dimen/width_15dp"
+                android:layout_marginTop="@dimen/height_20dp"
+                android:background="@drawable/shape_bt_bg">
+
+                <LinearLayout
+                    style="@style/WrapWrap"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/WrapWrap"
+                        android:paddingLeft="@dimen/width_12dp"
+                        android:paddingRight="@dimen/width_12dp"
+                        android:text="文案图片"
+                        android:textColor="@color/reader_menu_bg_color"
+                        android:textSize="16sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        style="@style/WrapWrap"
+                        android:layout_marginTop="@dimen/height_5dp"
+                        android:paddingLeft="@dimen/width_12dp"
+                        android:paddingRight="@dimen/width_12dp"
+                        android:text="保存图片和复制文字在朋友圈发布"
+                        android:textSize="@dimen/textsize_12sp"/>
+                </LinearLayout>
+
+
+                <ImageView
+                    style="@style/WrapWrap"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/promotion2"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/share3"
+                style="@style/MatchWrap"
+                android:layout_marginBottom="@dimen/height_20dp"
+                android:layout_marginLeft="@dimen/width_15dp"
+                android:layout_marginRight="@dimen/width_15dp"
+                android:layout_marginTop="@dimen/height_20dp"
+                android:background="@drawable/shape_bt_bg">
+
+                <LinearLayout
+                    style="@style/WrapWrap"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/WrapWrap"
+                        android:paddingLeft="@dimen/width_12dp"
+                        android:paddingRight="@dimen/width_12dp"
+                        android:text="分享链接"
+                        android:textColor="@color/reader_menu_bg_color"
+                        android:textSize="16sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        style="@style/WrapWrap"
+                        android:layout_marginTop="@dimen/height_5dp"
+                        android:paddingLeft="@dimen/width_12dp"
+                        android:paddingRight="@dimen/width_12dp"
+                        android:text="通过链接分享到朋友圈或者微信好友"
+                        android:textSize="@dimen/textsize_12sp"/>
+                </LinearLayout>
+
+
+                <ImageView
+                    style="@style/WrapWrap"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/promotion3"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

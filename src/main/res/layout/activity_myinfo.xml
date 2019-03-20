@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/MatchMatch"
+              android:background="@color/common_gray_bg"
+              android:orientation="vertical">
+
+    <include layout="@layout/toolbar"/>
+
+
+    <com.szinternet.crm.view.ReboundScrollView
+        style="@style/MatchMatch"
+        android:layout_below="@+id/ivHeader">
+
+        <LinearLayout
+            style="@style/MatchWrap"
+            android:layout_marginTop="@dimen/height_20dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/avatar_view"
+                style="@style/MatchWrap"
+                android:background="@drawable/selector_option_item"
+                android:clickable="true"
+                android:padding="@dimen/activity_vertical_margin">
+
+                <TextView
+                    style="@style/WrapWrap"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="我的头像"
+                    android:textColor="@color/common_h1"
+                    android:textSize="@dimen/textsize_18sp"/>
+
+                <ImageView
+                    android:id="@+id/tv_enter"
+                    style="@style/WrapWrap"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/icon_enter"/>
+
+                <ImageView
+                    android:id="@+id/tv_avatar"
+                    android:layout_width="@dimen/height_50dp"
+                    android:layout_height="@dimen/height_50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/width_15dp"
+                    android:layout_toLeftOf="@+id/tv_enter"
+                    android:src="@mipmap/default_head"/>
+            </RelativeLayout>
+
+            <View
+                style="@style/MatchOne"
+                android:layout_marginTop="@dimen/height_15dp"
+                android:background="@color/common_divider_narrow"/>
+
+            <RelativeLayout
+                android:id="@+id/phone_view"
+                style="@style/MatchWrap"
+                android:background="@drawable/selector_option_item"
+                android:clickable="true"
+                android:padding="@dimen/activity_vertical_margin">
+
+                <TextView
+                    style="@style/WrapWrap"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="手机号码"
+                    android:textColor="@color/common_h1"
+                    android:textSize="@dimen/textsize_18sp"/>
+
+                <TextView
+                    android:id="@+id/tv_phonenum"
+                    style="@style/WrapWrap"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="18888888888"
+                    android:textColor="@color/common_h2"/>
+            </RelativeLayout>
+
+            <View
+                style="@style/MatchOne"
+                android:layout_marginTop="@dimen/height_15dp"
+                android:background="@color/common_divider_narrow"/>
+
+            <RelativeLayout
+                android:id="@+id/bind_view"
+                style="@style/MatchWrap"
+                android:background="@drawable/selector_option_item"
+                android:clickable="true"
+                android:padding="@dimen/activity_vertical_margin">
+
+                <TextView
+                    style="@style/WrapWrap"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="实名认证"
+                    android:textColor="@color/common_h1"
+                    android:textSize="@dimen/textsize_18sp"/>
+
+                <TextView
+                    android:id="@+id/tv_bind"
+                    style="@style/WrapWrap"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="@dimen/width_10dp"
+                    android:drawableRight="@mipmap/icon_enter"
+                    android:text="未认证"
+                    android:textColor="@color/common_h2"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </com.szinternet.crm.view.ReboundScrollView>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/MatchMatch"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <include layout="@layout/toolbar"/>
+
+    <WebView
+        android:id="@+id/webView"
+        style="@style/MatchMatch"/>
+</LinearLayout>

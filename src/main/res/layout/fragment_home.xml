@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/MatchMatch"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/view_marqueeView"
+        style="@style/MatchWrap"
+        android:background="@color/toolbar"
+        android:paddingBottom="@dimen/height_5dp"
+        android:paddingLeft="@dimen/width_15dp"
+        android:paddingRight="@dimen/width_15dp"
+        android:paddingTop="@dimen/height_5dp">
+
+        <ImageView
+            android:id="@+id/iv_speaker"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_loudspeaker"/>
+
+        <com.szinternet.crm.marqueeview.MarqueeView
+            android:id="@+id/marqueeView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/width_8dp"
+            android:layout_marginRight="@dimen/width_8dp"
+            android:layout_toLeftOf="@+id/iv_message"
+            android:layout_toRightOf="@+id/iv_speaker"
+            android:background="@color/tip"
+            android:paddingLeft="@dimen/width_5dp"
+            android:paddingRight="@dimen/width_5dp"
+            app:mvAnimDuration="800"
+            app:mvDirection="right_to_left"
+            app:mvGravity="left"
+            app:mvInterval="2500"
+            app:mvSingleLine="true"
+            app:mvTextColor="@color/white"
+            app:mvTextSize="14sp"/>
+
+        <com.szinternet.crm.view.DotImageView
+            android:id="@+id/iv_message"
+            android:layout_width="@dimen/width_30dp"
+            android:layout_height="@dimen/width_30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="@dimen/width_8dp"
+            android:paddingTop="@dimen/width_5dp"
+            android:src="@mipmap/message"
+            app:dot_color="@color/white"
+            app:dot_is_show="true"/>
+
+        <!--<ImageView
+            android:id="@+id/iv_message"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/message"/>-->
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/MatchWrap"
+        android:layout_gravity="center_vertical"
+        android:background="@color/toolbar"
+        android:paddingBottom="@dimen/width_25dp"
+        android:paddingTop="@dimen/width_25dp">
+
+        <TextView
+            android:id="@+id/tv_collect"
+            style="@style/AutoMatch"
+            android:drawablePadding="@dimen/width_15dp"
+            android:drawableTop="@mipmap/homepage_icon_creditcard_receive"
+            android:gravity="center"
+            android:text="@string/main_collect_money"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/tv_repayment"
+            style="@style/AutoMatch"
+            android:drawablePadding="@dimen/width_15dp"
+            android:drawableTop="@mipmap/homepage_icon_creditcard_give"
+            android:gravity="center"
+            android:text="@string/main_repayment"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <com.szinternet.crm.view.CustomGridView
+        android:id="@+id/gridview"
+        style="@style/MatchWrap"
+        android:background="@color/white"
+        android:gravity="center"
+        android:numColumns="4"
+        android:paddingBottom="@dimen/height_10dp"
+        android:paddingTop="@dimen/height_10dp"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="@dimen/height_15dp">
+    </com.szinternet.crm.view.CustomGridView>
+
+    <include layout="@layout/item_home_adapter_list"/>
+
+    <cn.bingoogolapple.bgabanner.BGABanner
+        android:id="@+id/banner_guide_content"
+        style="@style/BannerDefaultStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/height_10dp"
+        android:visibility="gone"/>
+</LinearLayout>

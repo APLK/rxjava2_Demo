@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/MatchWrap"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/MatchWrap"
+        android:background="@color/white"
+        android:padding="@dimen/width_15dp">
+
+
+        <TextView
+            android:id="@+id/icon_small"
+            style="@style/WrapWrap"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@mipmap/menu_earnings_icon_one"
+            android:gravity="center"
+            android:text=""/>
+
+        <LinearLayout
+            style="@style/WrapWrap"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_gravity="center"
+                    android:id="@+id/icon_big"
+                    android:layout_marginTop="@dimen/width_10dp"
+                    android:layout_width="@dimen/height_60dp"
+                    android:layout_height="@dimen/height_60dp"
+                    android:src="@mipmap/default_head"/>
+                <ImageView
+                    android:layout_marginTop="@dimen/width_5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_champion"/>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/phone"
+                style="@style/WrapAuto"
+                android:layout_marginTop="@dimen/height_12dp"
+                android:text="undefined"
+                android:textColor="@color/common_h1"
+                android:textSize="@dimen/textsize_14sp"/>
+
+            <TextView
+                android:id="@+id/introduce_count"
+                style="@style/WrapAuto"
+                android:layout_marginTop="@dimen/height_8dp"
+                android:text="@string/introduce_count"
+                android:textColor="@color/common_h2"
+                android:textSize="@dimen/textsize_12sp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/icon_grade"
+            style="@style/WrapWrap"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="undefined"
+            android:textColor="@color/common_h1"/>
+    </RelativeLayout>
+
+    <View
+        style="@style/MatchOne"
+        android:background="@color/common_divider_narrow"/>
+</LinearLayout>
